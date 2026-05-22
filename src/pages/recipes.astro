@@ -1,0 +1,370 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { recipes } from '../data/recipes.js';
+
+const cuisineColors = {
+  '🇯🇵': '#EF476F',
+  '🇮🇳': '#FF8C42',
+  '🇲🇽': '#F9C74F',
+  '🇬🇷': '#118AB2',
+  '🇪🇹': '#2ECC71',
+  '🇰🇷': '#9B5DE5',
+  '🇲🇦': '#43AA8B',
+  '🇹🇭': '#06D6A0',
+  '🇵🇪': '#FF8C42',
+  '🇮🇹': '#EF476F',
+  '🇧🇷': '#2ECC71',
+};
+
+function getCardColor(recipe) {
+  return cuisineColors[recipe.cuisineFlag] || '#2ECC71';
+}
+
+const nutrientSpotlights = [
+  { nutrient: 'Omega-3 Fatty Acids', emoji: '🐟', color: '#118AB2', recipes: ['Miso-Glazed Salmon Bowl'] },
+  { nutrient: 'Iron', emoji: '⚙️', color: '#EF476F', recipes: ['Dal Makhani with Turmeric Rice', 'Spiced Red Lentil Soup (Misir Wot)', 'Sardinian Minestrone with Farro'] },
+  { nutrient: 'Folate', emoji: '🧬', color: '#9B5DE5', recipes: ['Spiced Red Lentil Soup (Misir Wot)', 'Kimchi Bibimbap', 'Sardinian Minestrone with Farro'] },
+  { nutrient: 'Vitamin K2', emoji: '🦴', color: '#43AA8B', recipes: ['Natto & Avocado Toast on Rye'] },
+  { nutrient: 'Selenium', emoji: '🌰', color: '#F9C74F', recipes: ['Açaí & Brazil Nut Smoothie Bowl', 'Miso-Glazed Salmon Bowl'] },
+  { nutrient: 'Fiber', emoji: '🌿', color: '#2ECC71', recipes: ['Sardinian Minestrone with Farro', 'Black Bean & Roasted Veggie Burrito Bowl', 'Spiced Red Lentil Soup (Misir Wot)'] },
+];
+---
+
+<Layout title="World Recipes — NutriWorld" description="12 globally-inspired recipes with detailed micronutrient breakdowns. Discover how traditional food cultures got nutrition right.">
+
+  <!-- Hero -->
+  <section class="section" style="background: linear-gradient(135deg, #F5F3EC 0%, #FFF0E8 50%, #F0F8FF 100%); text-align: center; padding: 80px 20px;">
+    <div class="container">
+      <div style="font-size: 3rem; margin-bottom: 16px;">🌍</div>
+      <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; color: var(--text); margin-bottom: 16px; line-height: 1.2;">
+        World Recipes —<br><span style="color: var(--accent-orange);">Nutrition Has No Borders</span>
+      </h1>
+      <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 640px; margin: 0 auto 28px; line-height: 1.7;">
+        Traditional food cultures around the world discovered optimal nutrition long before modern science caught up. Each of these 12 recipes carries centuries of nutritional wisdom — and full micronutrient breakdowns to prove it.
+      </p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; font-size: 1.5rem;">
+        {['🇯🇵', '🇮🇳', '🇲🇽', '🇬🇷', '🇪🇹', '🇰🇷', '🇲🇦', '🇹🇭', '🇵🇪', '🇮🇹', '🇧🇷'].map(flag => (
+          <span>{flag}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Bar -->
+  <section style="background: white; padding: 20px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+    <div class="container">
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+        <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-right: 4px;">Filter:</span>
+        {[
+          { label: '🌐 All Recipes', value: 'all' },
+          { label: '🇯🇵 Japanese', value: 'japanese' },
+          { label: '🇮🇳 Indian', value: 'indian' },
+          { label: '🌱 Vegan', value: 'plant-based' },
+          { label: '🐟 Fish', value: 'fish' },
+          { label: '🔥 Anti-Inflammatory', value: 'anti-inflammatory' },
+          { label: '🫒 Mediterranean', value: 'mediterranean' },
+          { label: '⚖️ Balanced', value: 'balanced-omnivore' },
+        ].map(f => (
+          <button
+            class="filter-btn"
+            data-filter={f.value}
+            style={`padding: 7px 16px; border-radius: 24px; border: 2px solid var(--border); background: ${f.value === 'all' ? 'var(--primary)' : 'white'}; color: ${f.value === 'all' ? 'white' : 'var(--text)'}; font-size: 0.875rem; font-weight: 600; cursor: pointer; transition: all 0.2s; white-space: nowrap;`}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipe Grid -->
+  <section class="section" style="padding: 48px 20px;">
+    <div class="container">
+      <div id="recipe-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px;">
+        {recipes.map(recipe => {
+          const cardColor = getCardColor(recipe);
+          const tagStr = [...recipe.dietTags, recipe.cuisine.toLowerCase().includes('japan') ? 'japanese' : '', recipe.cuisine.toLowerCase().includes('india') ? 'indian' : '', recipe.ingredients?.some(i => i.toLowerCase().includes('salmon') || i.toLowerCase().includes('prawn') || i.toLowerCase().includes('fish')) ? 'fish' : ''].filter(Boolean).join(' ');
+          return (
+            <div
+              class="recipe-card"
+              data-tags={tagStr}
+              style={`background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s;`}
+              onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 40px rgba(0,0,0,0.12)'"
+              onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.08)'"
+            >
+              <!-- Card Header -->
+              <div style={`background: linear-gradient(135deg, ${cardColor} 0%, ${cardColor}CC 100%); padding: 24px; color: white; position: relative; overflow: hidden;`}>
+                <div style="position: absolute; right: -10px; top: -10px; font-size: 4.5rem; opacity: 0.2; line-height: 1;">{recipe.emoji}</div>
+                <div style="position: relative; z-index: 1;">
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                    <span style="font-size: 1.8rem;">{recipe.emoji}</span>
+                    <span style="font-size: 1.3rem;">{recipe.cuisineFlag}</span>
+                  </div>
+                  <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0 0 4px; line-height: 1.3;">{recipe.name}</h3>
+                  <div style="font-size: 0.8rem; opacity: 0.9;">{recipe.cuisine}</div>
+                  <div style="display: flex; gap: 12px; margin-top: 12px; font-size: 0.8rem; font-weight: 600; opacity: 0.95;">
+                    <span style="display: flex; align-items: center; gap: 4px;">⏱ {recipe.time}</span>
+                    <span style="display: flex; align-items: center; gap: 4px;">📊 {recipe.difficulty}</span>
+                    <span style="display: flex; align-items: center; gap: 4px;">🍽 {recipe.servings} servings</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Body -->
+              <div style="padding: 20px;">
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; margin: 0 0 16px;">{recipe.description}</p>
+
+                <!-- Key Benefits -->
+                <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;">
+                  {recipe.keyBenefits.map(benefit => (
+                    <span style={`display: inline-block; padding: 4px 10px; border-radius: 16px; font-size: 0.775rem; font-weight: 600; background: ${cardColor}15; color: ${cardColor}; border: 1px solid ${cardColor}30;`}>{benefit}</span>
+                  ))}
+                </div>
+
+                <!-- Expandable Details -->
+                <details style="border-top: 1px solid var(--border); padding-top: 14px;">
+                  <summary style="display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-size: 0.9rem; font-weight: 700; color: var(--text); list-style: none; padding: 4px 0 8px;">
+                    <span>📖 Full Recipe & Nutrition</span>
+                    <span style={`color: ${cardColor}; font-size: 1.1rem; transition: transform 0.2s;`}>▾</span>
+                  </summary>
+
+                  <!-- Ingredients -->
+                  <div style="margin-top: 16px;">
+                    <h4 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 10px;">Ingredients</h4>
+                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px;">
+                      {recipe.ingredients.map(ing => (
+                        <li style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.875rem; color: var(--text); line-height: 1.4;">
+                          <span style={`color: ${cardColor}; flex-shrink: 0; font-weight: 700; margin-top: 1px;`}>•</span>
+                          {ing}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <!-- Steps -->
+                  <div style="margin-top: 20px;">
+                    <h4 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 10px;">Instructions</h4>
+                    <ol style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; counter-reset: steps;">
+                      {recipe.steps.map((step, si) => (
+                        <li style="display: flex; align-items: flex-start; gap: 12px; font-size: 0.875rem; color: var(--text); line-height: 1.55;">
+                          <span style={`flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: ${cardColor}; color: white; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; margin-top: 1px;`}>{si + 1}</span>
+                          {step}
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+
+                  <!-- Macros -->
+                  <div style="margin-top: 20px; background: var(--bg-section); border-radius: 10px; padding: 16px;">
+                    <h4 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 12px;">Nutrition Per Serving</h4>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; text-align: center;">
+                      {[
+                        { label: 'Calories', value: recipe.macros.calories, color: '#636E72' },
+                        { label: 'Protein', value: recipe.macros.protein, color: '#EF476F' },
+                        { label: 'Carbs', value: recipe.macros.carbs, color: '#F9C74F' },
+                        { label: 'Fat', value: recipe.macros.fat, color: '#06D6A0' },
+                        { label: 'Fiber', value: recipe.macros.fiber, color: '#2ECC71' },
+                      ].map(m => (
+                        <div style={`background: white; border-radius: 8px; padding: 8px 4px; border: 2px solid ${m.color}30;`}>
+                          <div style={`font-size: 0.95rem; font-weight: 800; color: ${m.color};`}>{m.value}</div>
+                          <div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px;">{m.label}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <!-- Key Micronutrients -->
+                  <div style="margin-top: 16px;">
+                    <h4 style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 10px;">Key Micronutrients</h4>
+                    <div style="display: flex; flex-direction: column; gap: 6px;">
+                      {recipe.keyMicronutrients.map(micro => (
+                        <div style={`display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; border-radius: 8px; font-size: 0.82rem; ${micro.highlight ? `background: ${cardColor}12; border: 1px solid ${cardColor}30;` : 'background: var(--bg-section); border: 1px solid var(--border);'}`}>
+                          <div style="display: flex; align-items: center; gap: 8px; font-weight: 600; color: var(--text);">
+                            <span>{micro.emoji}</span>
+                            <span>{micro.name}</span>
+                            {micro.highlight && <span style={`font-size: 0.7rem; padding: 1px 6px; border-radius: 8px; background: ${cardColor}; color: white; font-weight: 700;`}>★ Star</span>}
+                          </div>
+                          <span style={`font-size: 0.8rem; font-weight: 700; ${micro.highlight ? `color: ${cardColor};` : 'color: var(--text-muted);'}`}>{micro.amount}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <!-- Tip Box -->
+                  <div style={`margin-top: 16px; background: ${cardColor}10; border-left: 4px solid ${cardColor}; border-radius: 0 8px 8px 0; padding: 14px 16px;`}>
+                    <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 5px;">💡 Chef's Nutrition Tip</div>
+                    <p style="font-size: 0.875rem; color: var(--text); line-height: 1.6; margin: 0;">{recipe.tip}</p>
+                  </div>
+
+                  <!-- Fun Fact -->
+                  <div style="margin-top: 12px; background: var(--bg-section); border-radius: 8px; padding: 12px 16px;">
+                    <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted); margin-bottom: 5px;">🌏 Did You Know?</div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; margin: 0;">{recipe.funFact}</p>
+                  </div>
+
+                </details>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <!-- No results message -->
+      <div id="no-results" style="display: none; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+        <div style="font-size: 3rem; margin-bottom: 16px;">🔍</div>
+        <h3 style="font-size: 1.2rem; font-weight: 600;">No recipes found</h3>
+        <p>Try a different filter or <button onclick="document.querySelector('[data-filter=all]').click()" style="background: none; border: none; color: var(--primary); font-weight: 700; cursor: pointer; font-size: 1rem;">show all recipes</button></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrient Spotlight -->
+  <section class="section-alt" style="padding: 60px 20px;">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; color: var(--text);">Nutrient Spotlight</h2>
+        <p style="color: var(--text-muted); margin-top: 10px; font-size: 1rem;">Which recipes excel at delivering specific critical nutrients?</p>
+      </div>
+      <div class="grid-3" style="gap: 20px;">
+        {nutrientSpotlights.map(spotlight => (
+          <div class="card" style="border-radius: var(--radius); overflow: hidden; border-top: 4px solid var(--border);" data-color={spotlight.color}>
+            <div style={`background: linear-gradient(135deg, ${spotlight.color}20 0%, ${spotlight.color}08 100%); padding: 20px 24px; border-top: 4px solid ${spotlight.color};`}>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.8rem;">{spotlight.emoji}</span>
+                <div>
+                  <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-muted);">Best Source of</div>
+                  <h3 style={`font-size: 1.05rem; font-weight: 800; color: ${spotlight.color}; margin: 0;`}>{spotlight.nutrient}</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card-body" style="padding: 16px 24px;">
+              {spotlight.recipes.map((rname, ri) => {
+                const r = recipes.find(x => x.name === rname);
+                return r ? (
+                  <div style={`display: flex; align-items: center; gap: 12px; padding: 10px 0; ${ri > 0 ? 'border-top: 1px solid var(--border);' : ''}`}>
+                    <span style="font-size: 1.4rem; flex-shrink: 0;">{r.emoji}</span>
+                    <div>
+                      <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">{r.name}</div>
+                      <div style="font-size: 0.775rem; color: var(--text-muted);">{r.cuisine}</div>
+                    </div>
+                  </div>
+                ) : null;
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Cook Smart Tips -->
+  <section class="section" style="padding: 60px 20px;">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; color: var(--text);">Cook Smart 🍳</h2>
+        <p style="color: var(--text-muted); margin-top: 10px; font-size: 1rem; max-width: 540px; margin-left: auto; margin-right: auto;">Small cooking tweaks can dramatically change how many nutrients you actually absorb from food.</p>
+      </div>
+      <div class="grid-3" style="gap: 20px;">
+        {[
+          { emoji: '🥦', title: 'Don\'t Overcook Vegetables', desc: 'Steam or lightly sauté vegetables to preserve water-soluble vitamins. Boiling can destroy up to 50% of Vitamin C. Al dente is nutritious; mushy is less so.' },
+          { emoji: '🫒', title: 'Use Olive Oil on Salads', desc: 'Fat-soluble vitamins (A, D, E, K) and carotenoids require fat for absorption. Dressing your salad with EVOO dramatically increases nutrient uptake — up to 15x for lycopene.' },
+          { emoji: '🍋', title: 'Add Lemon to Iron-Rich Dishes', desc: 'Vitamin C converts non-heme iron (from plants) from Fe³⁺ to Fe²⁺ — the absorbable form. A squeeze of lemon over lentils or beans can triple your iron absorption.' },
+          { emoji: '🦠', title: 'Ferment or Sprout', desc: 'Fermenting grains and legumes, or sprouting seeds, dramatically increases mineral bioavailability by breaking down phytates — the anti-nutrients that bind zinc, iron, and calcium.' },
+          { emoji: '🥕', title: 'Don\'t Peel Carrots (or Potatoes)', desc: 'The skin of many root vegetables contains a disproportionate concentration of nutrients including flavonoids, fiber, and minerals. Scrub well, cook with skin on.' },
+          { emoji: '🥦', title: 'Chop Broccoli 5 Min Before Cooking', desc: 'Chopping or chewing broccoli activates the myrosinase enzyme — which produces sulforaphane, broccoli\'s most potent anti-cancer compound. Wait 5 min before cooking to lock it in.' },
+        ].map(tip => (
+          <div class="card" style="border-radius: var(--radius); padding: 24px; border-left: 4px solid var(--primary);">
+            <div style="font-size: 2rem; margin-bottom: 12px;">{tip.emoji}</div>
+            <h3 style="font-size: 1rem; font-weight: 700; color: var(--text); margin: 0 0 10px;">{tip.title}</h3>
+            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.65; margin: 0;">{tip.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-alt" style="padding: 60px 20px; text-align: center;">
+    <div class="container">
+      <div style="max-width: 560px; margin: 0 auto;">
+        <div style="font-size: 2.5rem; margin-bottom: 16px;">📋</div>
+        <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--text); margin-bottom: 12px;">Want to Know Which Diet Fits You?</h2>
+        <p style="color: var(--text-muted); margin-bottom: 28px; line-height: 1.7;">Explore our detailed diet plan breakdowns — with nutrient strengths, gaps, and science-backed guidance on which eating pattern matches your goals.</p>
+        <a href="/diet-plans" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; font-size: 1rem; text-decoration: none; border-radius: 40px;">
+          🥗 Explore Diet Plans →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const recipeCards = document.querySelectorAll('.recipe-card');
+  const noResults = document.getElementById('no-results');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+
+      // Update button styles
+      filterBtns.forEach(b => {
+        b.style.background = 'white';
+        b.style.color = 'var(--text)';
+        b.style.borderColor = 'var(--border)';
+      });
+      btn.style.background = 'var(--primary)';
+      btn.style.color = 'white';
+      btn.style.borderColor = 'var(--primary)';
+
+      // Filter cards
+      let visibleCount = 0;
+      recipeCards.forEach(card => {
+        const tags = card.dataset.tags || '';
+        const show = filter === 'all' || tags.includes(filter);
+        card.style.display = show ? 'block' : 'none';
+        if (show) visibleCount++;
+      });
+
+      // No results
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+    });
+  });
+
+  // Details arrow rotation
+  document.querySelectorAll('details').forEach(el => {
+    el.addEventListener('toggle', () => {
+      const arrow = el.querySelector('summary span:last-child');
+      if (arrow) {
+        arrow.style.transform = el.open ? 'rotate(180deg)' : 'rotate(0deg)';
+      }
+    });
+  });
+</script>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  .filter-btn:hover {
+    border-color: var(--primary) !important;
+    background: var(--bg-section) !important;
+  }
+  @media (max-width: 640px) {
+    #recipe-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .grid-3 {
+      grid-template-columns: 1fr !important;
+    }
+  }
+  @media (max-width: 900px) {
+    #recipe-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    }
+  }
+</style>

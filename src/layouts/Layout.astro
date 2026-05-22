@@ -1,0 +1,130 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Discover the power of whole foods. Learn about micronutrients, explore diet plans, and find delicious recipes from around the world.' } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} | NutriWorld</title>
+  <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+      <a href={base} class="logo">
+        <span>🌿</span>
+        <span>NutriWorld</span>
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href={base}>Home</a>
+        <a href={`${base}nutrients`}>Micronutrients</a>
+        <a href={`${base}diet-plans`}>Diet Plans</a>
+        <a href={`${base}recipes`}>Recipes</a>
+        <a href={`${base}synergies`}>Food Synergies</a>
+      </nav>
+      <button class="mobile-menu-btn" aria-label="Menu" onclick="document.getElementById('main-nav').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div style="font-size:1.3rem;font-weight:800;color:var(--primary-light);margin-bottom:0.75rem;">🌿 NutriWorld</div>
+      <p style="color:#9BA8AB;font-size:0.9rem;max-width:500px;margin:0 auto 1.5rem;">Food first, supplements second. This site is for educational purposes only. Always consult a healthcare professional for medical advice.</p>
+      <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.5rem;">
+        <a href={base} style="color:#9BA8AB;font-size:0.9rem;transition:color 0.2s;" onmouseover="this.style.color='#A8E6CF'" onmouseout="this.style.color='#9BA8AB'">Home</a>
+        <a href={`${base}nutrients`} style="color:#9BA8AB;font-size:0.9rem;transition:color 0.2s;" onmouseover="this.style.color='#A8E6CF'" onmouseout="this.style.color='#9BA8AB'">Micronutrients</a>
+        <a href={`${base}diet-plans`} style="color:#9BA8AB;font-size:0.9rem;transition:color 0.2s;" onmouseover="this.style.color='#A8E6CF'" onmouseout="this.style.color='#9BA8AB'">Diet Plans</a>
+        <a href={`${base}recipes`} style="color:#9BA8AB;font-size:0.9rem;transition:color 0.2s;" onmouseover="this.style.color='#A8E6CF'" onmouseout="this.style.color='#9BA8AB'">Recipes</a>
+        <a href={`${base}synergies`} style="color:#9BA8AB;font-size:0.9rem;transition:color 0.2s;" onmouseover="this.style.color='#A8E6CF'" onmouseout="this.style.color='#9BA8AB'">Food Synergies</a>
+      </div>
+      <p style="color:#636E72;font-size:0.8rem;">Made with 💚 for better health through real food</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<style is:global>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(253, 252, 247, 0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    text-decoration: none;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
+  }
+  .main-nav a {
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: all 0.2s;
+  }
+  .main-nav a:hover {
+    background: var(--bg-section);
+    color: var(--text);
+  }
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .site-footer {
+    background: #2C3333;
+    padding: 4rem 0 2.5rem;
+    margin-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu-btn { display: block; }
+    .main-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      padding: 1rem 1.5rem;
+      flex-direction: column;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .main-nav.open { display: flex; }
+    .main-nav a { padding: 0.75rem 1rem; border-radius: 8px; }
+  }
+</style>

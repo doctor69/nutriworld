@@ -1,0 +1,378 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout title="Home" description="Discover the power of whole foods. Learn about micronutrients, explore balanced diet plans, and find delicious recipes from around the world.">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">🌿 Food First. Always.</div>
+        <h1>Your Food is Your <span class="hero-highlight">Best Medicine</span></h1>
+        <p class="hero-sub">Most people are unknowingly deficient in essential micronutrients — not because they don't eat enough, but because they don't eat the <em>right foods</em>. Before reaching for a pill, discover what whole foods can do for you.</p>
+        <div class="hero-cta">
+          <a href={`${base}nutrients`} class="btn btn-primary">🔬 Explore Micronutrients</a>
+          <a href={`${base}recipes`} class="btn btn-white">🍲 Browse World Recipes</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="hs-num" style="color:#FF8C42">27+</span><span>essential micronutrients</span></div>
+          <div class="hero-stat"><span class="hs-num" style="color:#43AA8B">12</span><span>world recipes</span></div>
+          <div class="hero-stat"><span class="hs-num" style="color:#9B5DE5">5</span><span>diet plans</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="food-wheel">
+          {['🥦','🍊','🐟','🥑','🫘','🫐','🥕','🥬','🥚','🌾','🧄','🍅'].map((emoji, i) => (
+            <div class="food-item" style={`--i:${i}`}>{emoji}</div>
+          ))}
+          <div class="food-center">🌿</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIDDEN HUNGER STATS -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">The Hidden Hunger</div>
+        <h2>Micronutrient Deficiency Is More Common Than You Think</h2>
+        <p>Billions of people worldwide are deficient in essential vitamins and minerals — even in wealthy nations. Most symptoms are subtle and go unnoticed for years.</p>
+      </div>
+      <div class="grid-4">
+        <div class="stat-card">
+          <div class="stat-number" style="color:var(--accent-orange)">2B</div>
+          <div class="stat-label">people worldwide suffer from micronutrient deficiencies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:var(--accent-purple)">1 in 2</div>
+          <div class="stat-label">people globally are deficient in Vitamin D</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:var(--accent-red)">1.6B</div>
+          <div class="stat-label">people affected by iron deficiency anemia — the most common nutritional disorder</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color:var(--accent-teal)">50%</div>
+          <div class="stat-label">of adults don't get enough Magnesium — linked to anxiety, insomnia & muscle cramps</div>
+        </div>
+      </div>
+      <div class="highlight-box highlight-orange mt-lg">
+        <strong>💡 The good news:</strong> Most deficiencies can be corrected or prevented with targeted whole food choices — no expensive supplements required. That's what NutriWorld is about.
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE COVER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">What's Inside</div>
+        <h2>Everything You Need to Eat Better</h2>
+      </div>
+      <div class="grid-3" style="gap:1.5rem;">
+        <a href={`${base}nutrients`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#FF8C42,#F9C74F)">🔬</div>
+          <h3>Micronutrients Guide</h3>
+          <p>27+ vitamins, minerals & phytonutrients — why you need them and exactly which foods provide them.</p>
+          <span class="fc-link">Explore →</span>
+        </a>
+        <a href={`${base}diet-plans`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#2ECC71,#06D6A0)">🥗</div>
+          <h3>Diet Plans</h3>
+          <p>5 evidence-based diets compared — Mediterranean, Plant-Based, Anti-Inflammatory, Longevity & more.</p>
+          <span class="fc-link">Explore →</span>
+        </a>
+        <a href={`${base}recipes`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#9B5DE5,#6A7FDB)">🍲</div>
+          <h3>World Recipes</h3>
+          <p>12 nutrient-dense recipes from Japan, India, Ethiopia, Peru & more — with full macro + micro breakdowns.</p>
+          <span class="fc-link">Explore →</span>
+        </a>
+        <a href={`${base}synergies`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#EF476F,#FF8C42)">🤝</div>
+          <h3>Food Synergies</h3>
+          <p>Why whole foods work better than supplements — the powerful nutrient pairs that multiply each other's benefits.</p>
+          <span class="fc-link">Explore →</span>
+        </a>
+        <a href={`${base}nutrients#deficiency`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#118AB2,#06D6A0)">⚠️</div>
+          <h3>Deficiency Signs</h3>
+          <p>Recognize the subtle symptoms of the most common deficiencies before they become serious health issues.</p>
+          <span class="fc-link">Learn More →</span>
+        </a>
+        <a href={`#food-first`} class="feature-card">
+          <div class="fc-icon" style="background:linear-gradient(135deg,#43AA8B,#2ECC71)">💊</div>
+          <h3>Why Food Beats Pills</h3>
+          <p>Supplements can help, but whole foods provide nutrients in forms your body recognizes — with cofactors that pills miss.</p>
+          <span class="fc-link">Read More →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED NUTRIENTS -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Most Important & Most Deficient</div>
+        <h2>6 Micronutrients Everyone Should Know</h2>
+        <p>These are the most commonly deficient nutrients worldwide — and the most impactful to optimize.</p>
+      </div>
+      <div class="grid-3">
+        {[
+          { emoji: '☀️', name: 'Vitamin D', benefit: 'Bone health, immune function, mood', food: 'Fatty fish, sunlight, egg yolks', color: '#FF8C42', badge: 'Very Common' },
+          { emoji: '😴', name: 'Magnesium', benefit: 'Energy, sleep quality, stress response', food: 'Pumpkin seeds, dark chocolate, spinach', color: '#9B5DE5', badge: 'Very Common' },
+          { emoji: '⚡', name: 'Vitamin B12', benefit: 'Nerve health, energy, red blood cells', food: 'Meat, fish, dairy, fortified foods', color: '#EF476F', badge: 'Vegans at risk' },
+          { emoji: '🔴', name: 'Iron', benefit: 'Oxygen transport, energy, cognition', food: 'Lentils + vitamin C, red meat, spinach', color: '#118AB2', badge: 'Common in women' },
+          { emoji: '🦪', name: 'Zinc', benefit: 'Immune function, wound healing', food: 'Oysters, beef, pumpkin seeds, chickpeas', color: '#43AA8B', badge: 'Widespread' },
+          { emoji: '🐟', name: 'Omega-3 (DHA)', benefit: 'Brain health, anti-inflammatory', food: 'Salmon, mackerel, sardines, chia seeds', color: '#06D6A0', badge: 'Most miss it' },
+        ].map(n => (
+          <div class="nutrient-spotlight">
+            <div class="ns-header" style={`background:${n.color}18;border-left:4px solid ${n.color}`}>
+              <span class="ns-emoji">{n.emoji}</span>
+              <div>
+                <h4 style={`color:${n.color}`}>{n.name}</h4>
+                <span class="badge badge-orange" style="font-size:0.7rem">{n.badge}</span>
+              </div>
+            </div>
+            <div class="ns-body">
+              <p class="ns-benefit">✦ {n.benefit}</p>
+              <div class="ns-food">🍽️ <strong>Best food sources:</strong> {n.food}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-lg">
+        <a href={`${base}nutrients`} class="btn btn-primary">See All 27+ Micronutrients →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY FOOD FIRST -->
+  <section class="section" id="food-first">
+    <div class="container">
+      <div class="grid-2" style="gap:3rem;align-items:center;">
+        <div>
+          <div class="eyebrow" style="display:inline-block;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--primary-dark);margin-bottom:0.75rem;padding:0.3rem 1rem;background:var(--primary-light);border-radius:50px;">Our Philosophy</div>
+          <h2 style="margin-bottom:1rem;">Why Whole Foods Beat Supplements</h2>
+          <p style="margin-bottom:1.5rem;">Isolated supplements can't replicate the complexity of real food. When you eat a carrot, you get beta-carotene alongside fiber, flavonoids, and hundreds of phytonutrients that work synergistically — something no pill can replicate.</p>
+          <ul class="check-list mb-lg">
+            <li><strong>Bioavailability:</strong> Nutrients in food come with natural cofactors that dramatically increase absorption</li>
+            <li><strong>Synergies:</strong> Vitamin C in bell peppers boosts iron absorption from the same meal by up to 67%</li>
+            <li><strong>Phytonutrients:</strong> Thousands of beneficial plant compounds that don't exist in any supplement</li>
+            <li><strong>Gut microbiome:</strong> Fiber from real food feeds beneficial bacteria, essential for immune function</li>
+            <li><strong>Regulation:</strong> Your body controls uptake from food; it can't easily regulate high-dose supplement dumps</li>
+            <li><strong>Safety:</strong> Fat-soluble vitamins (A, D, E, K) can build to toxic levels in supplement form</li>
+          </ul>
+          <div class="highlight-box highlight-green">
+            <strong>The NutriWorld Approach:</strong> Use supplements only to address documented deficiencies or when food sources are genuinely insufficient (e.g., B12 for vegans, D in low-sunlight climates). Always test before supplementing.
+          </div>
+        </div>
+        <div class="food-pyramid">
+          <div class="fp-label">The Food-First Pyramid</div>
+          {[
+            { foods: '🥦🥬🍅🫑🥕', label: 'Vegetables (most of your plate)', color: '#2ECC71', width: '100%' },
+            { foods: '🍎🫐🍊🥭', label: 'Fruits (2-3 servings/day)', color: '#F9C74F', width: '82%' },
+            { foods: '🌾🫘🍠', label: 'Legumes & Whole Grains', color: '#FF8C42', width: '65%' },
+            { foods: '🐟🥚🧀', label: 'Quality Protein & Dairy', color: '#9B5DE5', width: '48%' },
+            { foods: '🫒🥜🌰', label: 'Healthy Fats & Nuts', color: '#43AA8B', width: '32%' },
+            { foods: '🌿🧄🫚', label: 'Herbs, Spices & Oils', color: '#EF476F', width: '18%' },
+          ].map(tier => (
+            <div class="fp-tier" style={`width:${tier.width};background:${tier.color}22;border-left:4px solid ${tier.color}`}>
+              <span class="fp-foods">{tier.foods}</span>
+              <span class="fp-tier-label">{tier.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRIENT-DENSE FOODS -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Nature's Multivitamins</div>
+        <h2>Top Nutrient-Dense Foods to Eat Regularly</h2>
+        <p>These foods pack the most micronutrients per calorie. Add as many as possible to your weekly rotation.</p>
+      </div>
+      <div class="food-chips">
+        {[
+          { e: '🥬', n: 'Kale', b: 'K, A, C, B9' },
+          { e: '🐟', n: 'Salmon', b: 'D, B12, Omega-3' },
+          { e: '🍠', n: 'Sweet Potato', b: 'A, C, B6, K' },
+          { e: '🫘', n: 'Lentils', b: 'Iron, Folate, B1' },
+          { e: '🌰', n: 'Brazil Nuts', b: 'Selenium (1-2/day!)' },
+          { e: '🥦', n: 'Broccoli', b: 'C, K, Sulforaphane' },
+          { e: '🫐', n: 'Blueberries', b: 'Anthocyanins, C, K' },
+          { e: '🥚', n: 'Eggs', b: 'B12, D, Choline, A' },
+          { e: '🥑', n: 'Avocado', b: 'K, E, B5, Folate, K' },
+          { e: '🦪', n: 'Oysters', b: 'Zinc, B12, Cu, I' },
+          { e: '🎃', n: 'Pumpkin Seeds', b: 'Mg, Zn, Mn, Fe' },
+          { e: '🐟', n: 'Sardines', b: 'D, B12, Ca, Omega-3' },
+          { e: '🌿', n: 'Spinach', b: 'K, A, Mg, Fe, B9' },
+          { e: '🧄', n: 'Garlic', b: 'Allicin, B6, C, Mn' },
+          { e: '🍫', n: 'Dark Chocolate', b: 'Mg, Fe, Cu, Mn' },
+          { e: '🍅', n: 'Tomatoes', b: 'Lycopene, C, K, B9' },
+          { e: '🫚', n: 'Olive Oil', b: 'E, K, Polyphenols' },
+          { e: '🍵', n: 'Green Tea', b: 'EGCG, Mn, L-theanine' },
+        ].map(f => (
+          <div class="food-chip">
+            <span class="fc-emoji">{f.e}</span>
+            <div>
+              <div class="fc-name">{f.n}</div>
+              <div class="fc-benefits">{f.b}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container text-center">
+      <h2 style="color:white;margin-bottom:1rem;">Ready to Eat Smarter?</h2>
+      <p style="color:rgba(255,255,255,0.85);max-width:500px;margin:0 auto 2rem;font-size:1.05rem;">Start with the micronutrients guide to understand what your body needs, then build meals from our world recipes collection.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href={`${base}nutrients`} class="btn btn-white">🔬 View All Nutrients</a>
+        <a href={`${base}recipes`} class="btn btn-outline" style="border-color:white;color:white;">🍲 Find Recipes</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #F0FBF4 0%, #E8F8F0 30%, #FDF8F0 70%, #FFF5EE 100%);
+    padding: 5rem 0 4rem;
+    overflow: hidden;
+  }
+  .hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+  .hero h1 { margin-bottom: 1.25rem; color: var(--text); }
+  .hero-highlight {
+    background: linear-gradient(135deg, var(--primary), var(--accent-teal));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub { font-size: 1.1rem; margin-bottom: 2rem; max-width: 540px; }
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .btn-white { background: white; color: var(--primary-dark); border-color: white; }
+  .btn-white:hover { background: var(--primary-light); }
+  .hero-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+  .hero-stat { display: flex; flex-direction: column; gap: 0.15rem; }
+  .hs-num { font-size: 1.8rem; font-weight: 800; line-height: 1; }
+  .hero-stat span:last-child { font-size: 0.82rem; color: var(--text-muted); }
+
+  /* Food Wheel */
+  .hero-visual { display: flex; align-items: center; justify-content: center; }
+  .food-wheel {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
+  .food-item {
+    position: absolute;
+    font-size: 2rem;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(calc(var(--i) * 30deg)) translateX(120px) rotate(calc(var(--i) * -30deg)) translate(-50%, -50%);
+    animation: float 3s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+  }
+  .food-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: var(--shadow-lg);
+  }
+  @keyframes float {
+    0%, 100% { transform: rotate(calc(var(--i) * 30deg)) translateX(120px) rotate(calc(var(--i) * -30deg)) translate(-50%, -50%) translateY(0); }
+    50% { transform: rotate(calc(var(--i) * 30deg)) translateX(120px) rotate(calc(var(--i) * -30deg)) translate(-50%, -50%) translateY(-6px); }
+  }
+
+  /* Feature Cards */
+  .feature-card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    border: 1px solid var(--border);
+    transition: all 0.25s ease;
+    display: block;
+  }
+  .feature-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--primary-light); }
+  .fc-icon { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 1.25rem; }
+  .feature-card h3 { margin-bottom: 0.6rem; font-size: 1.1rem; }
+  .feature-card p { font-size: 0.9rem; line-height: 1.6; margin-bottom: 1rem; }
+  .fc-link { font-size: 0.9rem; font-weight: 600; color: var(--primary-dark); }
+
+  /* Nutrient Spotlights */
+  .nutrient-spotlight { background: white; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; transition: all 0.2s; }
+  .nutrient-spotlight:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+  .ns-header { display: flex; align-items: center; gap: 1rem; padding: 1.25rem; }
+  .ns-emoji { font-size: 1.8rem; }
+  .ns-header h4 { margin-bottom: 0.2rem; font-size: 1rem; }
+  .ns-body { padding: 1rem 1.25rem 1.25rem; }
+  .ns-benefit { font-size: 0.9rem; color: var(--text); margin-bottom: 0.6rem; font-weight: 500; }
+  .ns-food { font-size: 0.85rem; color: var(--text-muted); }
+
+  /* Food Pyramid */
+  .food-pyramid { background: white; padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--border); }
+  .fp-label { font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 1rem; text-align: center; }
+  .fp-tier { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; border-radius: 8px; margin: 0 auto 0.5rem; transition: width 0.3s; }
+  .fp-foods { font-size: 1.3rem; white-space: nowrap; }
+  .fp-tier-label { font-size: 0.82rem; font-weight: 500; color: var(--text); }
+
+  /* Food Chips */
+  .food-chips { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .food-chip { display: flex; align-items: center; gap: 0.6rem; background: white; border: 1px solid var(--border); border-radius: 50px; padding: 0.5rem 1rem 0.5rem 0.6rem; transition: all 0.2s; }
+  .food-chip:hover { box-shadow: var(--shadow-sm); border-color: var(--primary-light); transform: translateY(-1px); }
+  .fc-emoji { font-size: 1.4rem; }
+  .fc-name { font-size: 0.88rem; font-weight: 600; color: var(--text); line-height: 1.1; }
+  .fc-benefits { font-size: 0.75rem; color: var(--text-muted); }
+
+  /* CTA Banner */
+  .cta-banner {
+    background: linear-gradient(135deg, #27AE60 0%, #2ECC71 40%, #43AA8B 100%);
+    padding: 5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero .container { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+    .hero { padding: 3rem 0; }
+  }
+</style>
