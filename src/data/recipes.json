@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "miso-salmon-bowl",
+    "name": "Miso-Glazed Salmon Bowl",
+    "cuisine": "Japanese 🇯🇵",
+    "cuisineFlag": "🇯🇵",
+    "emoji": "🍱",
+    "category": "bowl",
+    "dietTags": [
+      "anti-inflammatory",
+      "balanced-omnivore",
+      "mediterranean"
+    ],
+    "difficulty": "Easy",
+    "time": "25 min",
+    "servings": 2,
+    "description": "Umami-rich miso-glazed salmon with brown rice, edamame, avocado, and pickled cucumber. A nutrient powerhouse in a bowl.",
+    "keyBenefits": [
+      "Rich in Omega-3s",
+      "Complete protein",
+      "Gut-healthy probiotics (miso)",
+      "Iodine from seaweed garnish"
+    ],
+    "ingredients": [
+      "2 salmon fillets (150g each)",
+      "2 tbsp white miso paste",
+      "1 tbsp rice vinegar",
+      "1 tbsp honey or maple syrup",
+      "1 tsp sesame oil",
+      "1 cup brown rice (cooked)",
+      "1 cup edamame (shelled)",
+      "1 avocado, sliced",
+      "½ cucumber, thinly sliced",
+      "1 tbsp rice vinegar (for cucumber)",
+      "Nori strips, sesame seeds to garnish",
+      "1 tbsp soy sauce"
+    ],
+    "steps": [
+      "Mix miso, rice vinegar, honey, and sesame oil for glaze.",
+      "Marinate salmon 15 min, then bake at 200°C for 12-15 min or pan-sear.",
+      "Pickle cucumber: toss with rice vinegar, salt, pinch of sugar for 10 min.",
+      "Assemble bowl: rice base, salmon, edamame, avocado, pickled cucumber.",
+      "Garnish with nori strips, sesame seeds, soy sauce."
+    ],
+    "macros": {
+      "calories": 580,
+      "protein": "42g",
+      "carbs": "48g",
+      "fat": "22g",
+      "fiber": "8g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Omega-3 (DHA+EPA)",
+        "amount": "2200mg",
+        "emoji": "🐟",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin D",
+        "amount": "18mcg (90% RDA)",
+        "emoji": "☀️",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "3.2mcg (133% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "Selenium",
+        "amount": "45mcg (82% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Potassium",
+        "amount": "1250mg (36% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Folate",
+        "amount": "180mcg (45% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin E",
+        "amount": "4mg (27% RDA)",
+        "emoji": "🛡️"
+      },
+      {
+        "name": "Iodine (from nori)",
+        "amount": "~40mcg",
+        "emoji": "🦋"
+      },
+      {
+        "name": "Probiotics (from miso)",
+        "amount": "Live cultures",
+        "emoji": "🦠"
+      }
+    ],
+    "tip": "White miso is fermented and contains probiotics — add to the bowl after cooking rather than into the marinade to preserve live cultures.",
+    "funFact": "Japan has the highest concentration of centenarians in the world — Okinawa's traditional diet relies heavily on this kind of balanced bowl eating."
+  },
+  {
+    "id": "dal-makhani",
+    "name": "Dal Makhani with Turmeric Rice",
+    "cuisine": "Indian 🇮🇳",
+    "cuisineFlag": "🇮🇳",
+    "emoji": "🍛",
+    "category": "stew",
+    "dietTags": [
+      "plant-based",
+      "balanced-omnivore",
+      "longevity"
+    ],
+    "difficulty": "Medium",
+    "time": "50 min",
+    "servings": 4,
+    "description": "Creamy black lentil curry slow-cooked with tomatoes, ginger, and warming spices. An iron and folate powerhouse enjoyed across India — vegan-friendly and deeply satisfying.",
+    "keyBenefits": [
+      "Exceptional iron source",
+      "High plant protein",
+      "Anti-inflammatory spices",
+      "Gut-friendly legumes"
+    ],
+    "ingredients": [
+      "1 cup black lentils (urad dal), soaked overnight",
+      "¼ cup kidney beans (rajma), soaked",
+      "2 tbsp oil or ghee",
+      "1 large onion, finely chopped",
+      "4 garlic cloves, minced",
+      "1 inch ginger, grated",
+      "2 ripe tomatoes, pureed",
+      "1 tsp cumin seeds",
+      "1 tsp coriander powder",
+      "½ tsp garam masala",
+      "¼ tsp turmeric",
+      "Salt and chili to taste",
+      "2 cups basmati rice",
+      "½ tsp turmeric (for rice)",
+      "Fresh coriander to garnish"
+    ],
+    "steps": [
+      "Pressure cook soaked lentils and beans for 20 min until very soft.",
+      "In a heavy pan, bloom cumin seeds in oil, then add onion and cook until golden.",
+      "Add garlic and ginger, cook 2 min, then add tomato puree and all spices.",
+      "Combine cooked lentils with the masala, simmer 20 min until thick and creamy.",
+      "Cook basmati rice with turmeric and a pinch of salt.",
+      "Serve dal over turmeric rice, garnish with fresh coriander."
+    ],
+    "macros": {
+      "calories": 450,
+      "protein": "18g",
+      "carbs": "65g",
+      "fat": "12g",
+      "fiber": "13g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Iron",
+        "amount": "8mg (44% RDA)",
+        "emoji": "⚙️",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "350mcg (88% RDA)",
+        "emoji": "🧬",
+        "highlight": true
+      },
+      {
+        "name": "Magnesium",
+        "amount": "80mg (19% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Zinc",
+        "amount": "3.5mg (32% RDA)",
+        "emoji": "🔬"
+      },
+      {
+        "name": "Vitamin B6",
+        "amount": "0.4mg (24% RDA)",
+        "emoji": "🧠"
+      },
+      {
+        "name": "Potassium",
+        "amount": "850mg (24% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Curcumin (turmeric)",
+        "amount": "Active anti-inflammatory",
+        "emoji": "🟡",
+        "highlight": true
+      },
+      {
+        "name": "Fiber",
+        "amount": "13g (46% RDA)",
+        "emoji": "🌿"
+      }
+    ],
+    "tip": "Pair with a squeeze of lemon juice — Vitamin C dramatically boosts iron absorption from plant sources by up to 3x.",
+    "funFact": "Black lentils have been a staple in South Asian cooking for over 4,000 years. India's average life expectancy in rural areas with high legume consumption rivals western nations."
+  },
+  {
+    "id": "black-bean-burrito-bowl",
+    "name": "Black Bean & Roasted Veggie Burrito Bowl",
+    "cuisine": "Mexican 🇲🇽",
+    "cuisineFlag": "🇲🇽",
+    "emoji": "🌮",
+    "category": "bowl",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Easy",
+    "time": "35 min",
+    "servings": 3,
+    "description": "Vibrant black beans, tri-color quinoa, roasted sweet potato and peppers with creamy avocado and fresh salsa. A fully plant-based bowl that delivers an extraordinary 18g of fiber.",
+    "keyBenefits": [
+      "18g fiber per serving!",
+      "Complete amino acid profile (quinoa)",
+      "Vitamin C boosts iron absorption",
+      "Naturally vegan & gluten-free"
+    ],
+    "ingredients": [
+      "1 can (400g) black beans, drained",
+      "1 cup quinoa",
+      "1 large sweet potato, cubed",
+      "2 bell peppers (mixed colors), sliced",
+      "1 ripe avocado",
+      "1 cup cherry tomatoes, halved",
+      "½ red onion, diced",
+      "1 lime, juiced",
+      "2 tbsp olive oil",
+      "1 tsp cumin",
+      "1 tsp smoked paprika",
+      "½ tsp garlic powder",
+      "Fresh cilantro, salt, pepper",
+      "Salsa or hot sauce to serve"
+    ],
+    "steps": [
+      "Toss sweet potato and peppers in olive oil, cumin, paprika, garlic powder. Roast at 220°C for 25 min.",
+      "Cook quinoa in vegetable broth (1:2 ratio) for 15 min. Fluff with fork.",
+      "Warm black beans with a pinch of cumin, salt, and a splash of lime juice.",
+      "Make quick salsa: cherry tomatoes, red onion, cilantro, lime juice, salt.",
+      "Assemble bowl: quinoa base, beans, roasted veggies, sliced avocado, salsa.",
+      "Finish with lime squeeze and fresh cilantro."
+    ],
+    "macros": {
+      "calories": 520,
+      "protein": "18g",
+      "carbs": "72g",
+      "fat": "16g",
+      "fiber": "18g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Fiber",
+        "amount": "18g (64% RDA)",
+        "emoji": "🌿",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "5.5mg (31% RDA)",
+        "emoji": "⚙️",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "95mg (106% RDA)",
+        "emoji": "🍋",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "290mcg (73% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "650mcg (72% RDA)",
+        "emoji": "🥕"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "120mg (29% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Potassium",
+        "amount": "1400mg (40% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Complete Protein (quinoa)",
+        "amount": "All 9 essential amino acids",
+        "emoji": "🏆"
+      }
+    ],
+    "tip": "The Vitamin C from lime and bell peppers in this bowl actively boosts iron absorption from the beans and quinoa — this pairing is nutritionally perfect.",
+    "funFact": "Quinoa was called \"the mother of all grains\" by the Incas. It is one of the only plant foods containing all 9 essential amino acids, making it a true complete protein."
+  },
+  {
+    "id": "greek-horiatiki",
+    "name": "Greek Horiatiki with White Beans",
+    "cuisine": "Greek 🇬🇷",
+    "cuisineFlag": "🇬🇷",
+    "emoji": "🥗",
+    "category": "salad",
+    "dietTags": [
+      "mediterranean",
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "15 min",
+    "servings": 2,
+    "description": "The upgraded classic Greek salad — gigante white beans added for protein, tossed with olives, creamy feta, cherry tomatoes, cucumber, red onion, and a generous drizzle of extra-virgin olive oil.",
+    "keyBenefits": [
+      "Heart-healthy polyphenols",
+      "Bone-building calcium from feta",
+      "Anti-inflammatory EVOO",
+      "Lycopene from tomatoes"
+    ],
+    "ingredients": [
+      "1 can (400g) gigante or cannellini beans, drained",
+      "200g cherry tomatoes, halved",
+      "1 large cucumber, chunked",
+      "½ red onion, thinly sliced",
+      "100g kalamata olives",
+      "150g good-quality feta, cubed",
+      "3 tbsp extra-virgin olive oil",
+      "1 tbsp red wine vinegar",
+      "1 tsp dried oregano",
+      "Salt and black pepper",
+      "Fresh mint or parsley (optional)"
+    ],
+    "steps": [
+      "Combine beans, cherry tomatoes, cucumber, and red onion in a large bowl.",
+      "Add kalamata olives and toss gently.",
+      "Whisk together EVOO, red wine vinegar, oregano, salt, and pepper.",
+      "Pour dressing over salad and toss to coat.",
+      "Top with feta cubes — do not crumble, keep chunky for texture.",
+      "Rest 5 min before serving for flavors to meld."
+    ],
+    "macros": {
+      "calories": 380,
+      "protein": "16g",
+      "carbs": "35g",
+      "fat": "20g",
+      "fiber": "10g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Calcium",
+        "amount": "280mg (28% RDA)",
+        "emoji": "🦴",
+        "highlight": true
+      },
+      {
+        "name": "Polyphenols (EVOO+olives)",
+        "amount": "Highly bioactive",
+        "emoji": "🫒",
+        "highlight": true
+      },
+      {
+        "name": "Lycopene (tomatoes)",
+        "amount": "Cancer-protective",
+        "emoji": "🍅",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "45mg (50% RDA)",
+        "emoji": "🍋"
+      },
+      {
+        "name": "Vitamin E",
+        "amount": "5mg (33% RDA)",
+        "emoji": "🛡️"
+      },
+      {
+        "name": "Quercetin (onion+tomatoes)",
+        "amount": "Anti-inflammatory flavonoid",
+        "emoji": "🧅"
+      },
+      {
+        "name": "Iron",
+        "amount": "4mg (22% RDA)",
+        "emoji": "⚙️"
+      },
+      {
+        "name": "Folate",
+        "amount": "180mcg (45% RDA)",
+        "emoji": "🧬"
+      }
+    ],
+    "tip": "Use the best olive oil you can afford — EVOO polyphenol content varies massively by quality. Cold-pressed, early harvest EVOO has up to 40x more polyphenols than refined olive oil.",
+    "funFact": "The island of Ikaria, Greece is a Blue Zone — residents eat a traditional diet very similar to this salad daily and regularly live past 90 with minimal chronic disease."
+  },
+  {
+    "id": "misir-wot",
+    "name": "Spiced Red Lentil Soup (Misir Wot)",
+    "cuisine": "Ethiopian 🇪🇹",
+    "cuisineFlag": "🇪🇹",
+    "emoji": "🥘",
+    "category": "stew",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Easy",
+    "time": "40 min",
+    "servings": 4,
+    "description": "A fiery, fragrant Ethiopian red lentil stew spiced with berbere — one of the world's most complex spice blends. Served with spongy injera bread. Vegan, and an extraordinary source of iron and folate.",
+    "keyBenefits": [
+      "Exceptional iron source (9mg!)",
+      "Folate at 100% RDA",
+      "Berbere spices are powerfully anti-inflammatory",
+      "High plant protein"
+    ],
+    "ingredients": [
+      "2 cups red lentils (masoor dal)",
+      "2 large onions, finely diced",
+      "3 tbsp berbere spice blend",
+      "3 garlic cloves, minced",
+      "1 inch ginger, grated",
+      "3 tbsp olive oil or niter kibbeh",
+      "1 can (400g) diced tomatoes",
+      "4 cups vegetable broth",
+      "1 tsp turmeric",
+      "½ tsp fenugreek",
+      "Salt and pepper to taste",
+      "Fresh lemon juice to serve",
+      "Injera bread or flatbread to serve"
+    ],
+    "steps": [
+      "Dry-toast berbere spice in pot for 30 sec until fragrant — do not burn.",
+      "Add oil and onions, cook on low heat 15 min until deeply caramelized.",
+      "Add garlic and ginger, stir 2 min. Add tomatoes and cook 5 min.",
+      "Rinse red lentils and add to pot with broth, turmeric, and fenugreek.",
+      "Simmer 20-25 min, stirring occasionally, until lentils are completely dissolved.",
+      "Adjust consistency with water. Finish with lemon juice. Serve with injera."
+    ],
+    "macros": {
+      "calories": 410,
+      "protein": "22g",
+      "carbs": "62g",
+      "fat": "6g",
+      "fiber": "16g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Iron",
+        "amount": "9mg (50% RDA)",
+        "emoji": "⚙️",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "400mcg (100% RDA)",
+        "emoji": "🧬",
+        "highlight": true
+      },
+      {
+        "name": "Potassium",
+        "amount": "900mg (26% RDA)",
+        "emoji": "🫀",
+        "highlight": true
+      },
+      {
+        "name": "Zinc",
+        "amount": "3mg (27% RDA)",
+        "emoji": "🔬"
+      },
+      {
+        "name": "Vitamin B1 (Thiamine)",
+        "amount": "0.5mg (42% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Selenium",
+        "amount": "15mcg (27% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Berbere phytonutrients",
+        "amount": "Highly anti-inflammatory",
+        "emoji": "🌶️"
+      },
+      {
+        "name": "Fiber",
+        "amount": "16g (57% RDA)",
+        "emoji": "🌿"
+      }
+    ],
+    "tip": "Caramelizing the onions slowly (15+ minutes) is the key step — it builds the deep umami base that defines authentic Misir Wot. Don't rush this step.",
+    "funFact": "Ethiopia's teff injera bread is one of the most nutritious grains in the world, rich in iron, calcium, and resistant starch. Ethiopia has some of the lowest rates of chronic disease in Africa."
+  },
+  {
+    "id": "kimchi-bibimbap",
+    "name": "Kimchi Bibimbap",
+    "cuisine": "Korean 🇰🇷",
+    "cuisineFlag": "🇰🇷",
+    "emoji": "🍚",
+    "category": "bowl",
+    "dietTags": [
+      "balanced-omnivore",
+      "anti-inflammatory",
+      "mediterranean"
+    ],
+    "difficulty": "Medium",
+    "time": "45 min",
+    "servings": 2,
+    "description": "Korea's iconic mixed rice bowl — brown rice topped with individually sautéed vegetables, a perfectly soft egg, tangy probiotic-rich kimchi, and fiery gochujang sauce. A nutritional masterpiece of color and variety.",
+    "keyBenefits": [
+      "Probiotics from kimchi",
+      "Rich in Vitamin K & A",
+      "Diverse plant foods in one bowl",
+      "Gut microbiome diversity"
+    ],
+    "ingredients": [
+      "1½ cups brown rice (cooked)",
+      "200g fresh spinach",
+      "1 cup bean sprouts",
+      "2 medium carrots, julienned",
+      "1 zucchini, julienned",
+      "150g shiitake mushrooms, sliced",
+      "2 eggs",
+      "150g kimchi (store-bought or homemade)",
+      "2 tbsp gochujang",
+      "1 tbsp sesame oil",
+      "1 tbsp soy sauce",
+      "1 tsp rice vinegar",
+      "1 tsp honey",
+      "Sesame seeds, nori strips to garnish"
+    ],
+    "steps": [
+      "Make gochujang sauce: mix gochujang, sesame oil, soy sauce, vinegar, honey.",
+      "Sauté each vegetable separately with a little sesame oil and soy sauce: spinach (1 min), bean sprouts (2 min), carrots (3 min), zucchini (3 min), mushrooms (4 min).",
+      "Fry eggs sunny-side up until whites are set but yolks still runny.",
+      "Arrange rice in bowls. Place each vegetable in separate sections around the bowl.",
+      "Add kimchi, top with the fried egg.",
+      "Drizzle gochujang sauce, sprinkle sesame seeds. Mix everything together before eating!"
+    ],
+    "macros": {
+      "calories": 490,
+      "protein": "20g",
+      "carbs": "75g",
+      "fat": "12g",
+      "fiber": "11g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin K1",
+        "amount": "200mcg (167% RDA)",
+        "emoji": "🩸",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "580mcg (64% RDA)",
+        "emoji": "🥕",
+        "highlight": true
+      },
+      {
+        "name": "Probiotics (kimchi)",
+        "amount": "Diverse live cultures",
+        "emoji": "🦠",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "5mg (28% RDA)",
+        "emoji": "⚙️"
+      },
+      {
+        "name": "Folate",
+        "amount": "220mcg (55% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Manganese",
+        "amount": "2.8mg (122% RDA)",
+        "emoji": "🔩"
+      },
+      {
+        "name": "Zinc",
+        "amount": "3.2mg (29% RDA)",
+        "emoji": "🔬"
+      },
+      {
+        "name": "Choline (from egg)",
+        "amount": "150mg (27% RDA)",
+        "emoji": "🧠"
+      }
+    ],
+    "tip": "The secret to authentic bibimbap is to sauté each vegetable separately — this preserves individual flavors and textures, and ensures each ingredient is seasoned optimally.",
+    "funFact": "South Korea has one of the highest life expectancies in Asia. The daily consumption of fermented kimchi — containing over 200 species of beneficial bacteria — is considered a major contributor."
+  },
+  {
+    "id": "moroccan-chickpea-tagine",
+    "name": "Moroccan Chickpea & Butternut Tagine",
+    "cuisine": "Moroccan 🇲🇦",
+    "cuisineFlag": "🇲🇦",
+    "emoji": "🫕",
+    "category": "stew",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Medium",
+    "time": "55 min",
+    "servings": 4,
+    "description": "A fragrant North African tagine of chickpeas and roasted butternut squash, with preserved lemon, olives, and the complex ras el hanout spice blend, served over fluffy couscous.",
+    "keyBenefits": [
+      "Extraordinary Vitamin A source",
+      "Complex anti-inflammatory spices",
+      "High fiber from chickpeas",
+      "Preserved lemon is probiotic-rich"
+    ],
+    "ingredients": [
+      "2 cans (800g) chickpeas, drained",
+      "1 medium butternut squash, cubed",
+      "1 can (400g) diced tomatoes",
+      "1 preserved lemon, flesh discarded, rind chopped",
+      "½ cup green olives, pitted",
+      "1 large onion, diced",
+      "4 garlic cloves, minced",
+      "2 tbsp ras el hanout spice",
+      "1 tsp cumin",
+      "½ tsp cinnamon",
+      "2 tbsp olive oil",
+      "500ml vegetable broth",
+      "2 cups couscous",
+      "Fresh coriander, toasted almonds to serve"
+    ],
+    "steps": [
+      "Preheat oven to 200°C. Toss butternut squash with 1 tbsp oil and roast 20 min.",
+      "In tagine or heavy pot, sauté onion in oil 8 min until soft. Add garlic and all spices, stir 1 min.",
+      "Add tomatoes and broth, bring to simmer.",
+      "Add chickpeas, roasted squash, preserved lemon, and olives.",
+      "Simmer 25 min until sauce thickens and flavors meld.",
+      "Pour boiling water over couscous (equal parts), cover 5 min, fluff with fork.",
+      "Serve tagine over couscous with fresh coriander and toasted almonds."
+    ],
+    "macros": {
+      "calories": 460,
+      "protein": "16g",
+      "carbs": "78g",
+      "fat": "8g",
+      "fiber": "14g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin A (from squash)",
+        "amount": "820mcg (91% RDA)",
+        "emoji": "🥕",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "6mg (33% RDA)",
+        "emoji": "⚙️",
+        "highlight": true
+      },
+      {
+        "name": "Fiber",
+        "amount": "14g (50% RDA)",
+        "emoji": "🌿",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "280mcg (70% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "55mg (61% RDA)",
+        "emoji": "🍋"
+      },
+      {
+        "name": "Zinc",
+        "amount": "3mg (27% RDA)",
+        "emoji": "🔬"
+      },
+      {
+        "name": "Copper",
+        "amount": "0.6mg (67% RDA)",
+        "emoji": "🔶"
+      },
+      {
+        "name": "Ras el hanout polyphenols",
+        "amount": "Highly anti-inflammatory",
+        "emoji": "🌶️"
+      }
+    ],
+    "tip": "Ras el hanout translates to \"top of the shop\" — it contains up to 30 spices including rose petals, cardamom, and mace. Each spice carries its own anti-inflammatory compounds.",
+    "funFact": "Morocco's traditional tagine cooking method (slow, low heat, with lid trapping steam) preserves water-soluble vitamins like Vitamin C and B vitamins far better than boiling."
+  },
+  {
+    "id": "thai-som-tam",
+    "name": "Thai Green Papaya & Prawn Salad (Som Tam)",
+    "cuisine": "Thai 🇹🇭",
+    "cuisineFlag": "🇹🇭",
+    "emoji": "🥗",
+    "category": "salad",
+    "dietTags": [
+      "anti-inflammatory",
+      "balanced-omnivore",
+      "mediterranean"
+    ],
+    "difficulty": "Easy",
+    "time": "20 min",
+    "servings": 2,
+    "description": "Thailand's beloved street food — crisp shredded green papaya with tiger prawns, cherry tomatoes, peanuts, fresh chili, fish sauce, and a generous squeeze of lime. Light, vibrant, and nutritionally exceptional.",
+    "keyBenefits": [
+      "Vitamin C at 133% RDA",
+      "Iodine from prawns",
+      "Zinc for immunity",
+      "Papain enzyme aids digestion"
+    ],
+    "ingredients": [
+      "1 medium green papaya, peeled and shredded (350g)",
+      "200g tiger prawns, cooked and peeled",
+      "150g cherry tomatoes, halved",
+      "3 tbsp roasted peanuts, roughly crushed",
+      "2 long green beans, cut in thirds",
+      "2-3 Thai bird chilies (adjust to taste)",
+      "2 garlic cloves",
+      "2 tbsp fish sauce",
+      "2 tbsp lime juice",
+      "1 tbsp palm sugar or honey",
+      "Dried shrimp (optional, traditional)",
+      "Fresh lime wedges to serve"
+    ],
+    "steps": [
+      "Pound garlic and chilies in a mortar until crushed (or finely chop).",
+      "Make dressing: combine fish sauce, lime juice, and palm sugar until dissolved.",
+      "Add green beans to mortar, bruise lightly.",
+      "Combine shredded papaya, cherry tomatoes, and prawns in a large bowl.",
+      "Add garlic-chili mixture and dressing, toss vigorously.",
+      "Top with crushed peanuts. Serve immediately with lime wedges."
+    ],
+    "macros": {
+      "calories": 290,
+      "protein": "24g",
+      "carbs": "32g",
+      "fat": "8g",
+      "fiber": "5g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin C",
+        "amount": "120mg (133% RDA)",
+        "emoji": "🍋",
+        "highlight": true
+      },
+      {
+        "name": "Iodine (from prawns)",
+        "amount": "95mcg (63% RDA)",
+        "emoji": "🦋",
+        "highlight": true
+      },
+      {
+        "name": "Zinc (from prawns)",
+        "amount": "3.5mg (32% RDA)",
+        "emoji": "🔬",
+        "highlight": true
+      },
+      {
+        "name": "Selenium",
+        "amount": "35mcg (64% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "380mcg (42% RDA)",
+        "emoji": "🥕"
+      },
+      {
+        "name": "Papain enzyme",
+        "amount": "Digestive support",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Astaxanthin (prawns)",
+        "amount": "Powerful antioxidant",
+        "emoji": "🦐"
+      },
+      {
+        "name": "Potassium",
+        "amount": "780mg (22% RDA)",
+        "emoji": "🫀"
+      }
+    ],
+    "tip": "Green unripe papaya is entirely different nutritionally from ripe papaya — it contains papain, an enzyme that aids protein digestion and has anti-inflammatory properties.",
+    "funFact": "Thailand has one of the lowest rates of obesity in Asia. Som Tam is eaten daily by millions of Thais and is cited as a key reason for their lean physique — high in nutrients, low in calories."
+  },
+  {
+    "id": "peruvian-quinoa-soup",
+    "name": "Peruvian Quinoa Soup (Sopa de Quinoa)",
+    "cuisine": "Peruvian 🇵🇪",
+    "cuisineFlag": "🇵🇪",
+    "emoji": "🍲",
+    "category": "soup",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Easy",
+    "time": "40 min",
+    "servings": 4,
+    "description": "A nourishing Andean soup with quinoa, potato, corn, seasonal vegetables, and herbs, brightened with aji amarillo chili and lime. Naturally gluten-free with a complete protein from quinoa.",
+    "keyBenefits": [
+      "Complete protein (all 9 amino acids)",
+      "Naturally gluten-free",
+      "High magnesium for energy",
+      "Aji amarillo rich in Vitamin C"
+    ],
+    "ingredients": [
+      "1½ cups white quinoa, rinsed",
+      "2 medium potatoes, cubed",
+      "1 cup corn kernels (fresh or frozen)",
+      "1 medium carrot, diced",
+      "2 celery stalks, sliced",
+      "1 onion, diced",
+      "4 garlic cloves, minced",
+      "1-2 tsp aji amarillo paste (or yellow chili)",
+      "6 cups vegetable broth",
+      "1 tbsp olive oil",
+      "1 tsp cumin",
+      "Fresh oregano and cilantro",
+      "2 limes, juiced",
+      "Salt and pepper to taste"
+    ],
+    "steps": [
+      "Sauté onion in olive oil 5 min. Add garlic, cumin, and aji amarillo paste, stir 1 min.",
+      "Add broth, potato, and carrot. Bring to boil, simmer 10 min.",
+      "Add rinsed quinoa, corn, and celery. Simmer 15 min until quinoa is cooked (tails appear).",
+      "Season with salt, pepper, and fresh herbs.",
+      "Finish with generous squeeze of lime.",
+      "Serve hot garnished with fresh cilantro and extra lime wedges."
+    ],
+    "macros": {
+      "calories": 380,
+      "protein": "14g",
+      "carbs": "62g",
+      "fat": "7g",
+      "fiber": "9g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Magnesium",
+        "amount": "95mg (23% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "Complete Protein (all EAAs)",
+        "amount": "All 9 essential amino acids",
+        "emoji": "🏆",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "4.5mg (25% RDA)",
+        "emoji": "⚙️",
+        "highlight": true
+      },
+      {
+        "name": "Zinc",
+        "amount": "2.8mg (25% RDA)",
+        "emoji": "🔬"
+      },
+      {
+        "name": "Manganese",
+        "amount": "1.9mg (83% RDA)",
+        "emoji": "🔩"
+      },
+      {
+        "name": "Folate",
+        "amount": "220mcg (55% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Fiber",
+        "amount": "9g (32% RDA)",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Vitamin C (aji amarillo)",
+        "amount": "High (boosts iron absorption)",
+        "emoji": "🍋"
+      }
+    ],
+    "tip": "Always rinse quinoa thoroughly before cooking — the outer coating (saponin) is naturally bitter. Rinsing for 2 min under running water eliminates this completely.",
+    "funFact": "Quinoa has been cultivated in the Andes for over 5,000 years. The Incas called it \"chisiya mama\" (mother grain) and considered it sacred. NASA has studied it as a potential crop for long space missions."
+  },
+  {
+    "id": "sardinian-minestrone",
+    "name": "Sardinian Minestrone with Farro",
+    "cuisine": "Italian 🇮🇹",
+    "cuisineFlag": "🇮🇹",
+    "emoji": "🍵",
+    "category": "soup",
+    "dietTags": [
+      "mediterranean",
+      "longevity",
+      "plant-based"
+    ],
+    "difficulty": "Easy",
+    "time": "50 min",
+    "servings": 6,
+    "description": "A Blue Zones masterpiece — Sardinia's vegetable-laden minestrone with ancient farro grain, cannellini beans, dark kale, tomatoes, and a generous finish of grassy extra-virgin olive oil. Linked to extraordinary longevity.",
+    "keyBenefits": [
+      "Blue Zones longevity recipe",
+      "Exceptional fiber (16g)",
+      "Ancient farro grain for gut health",
+      "EVOO polyphenols"
+    ],
+    "ingredients": [
+      "1 cup farro, rinsed",
+      "1 can (400g) cannellini beans, drained",
+      "1 can (400g) diced tomatoes",
+      "200g kale or cavolo nero, chopped",
+      "2 carrots, diced",
+      "3 celery stalks, diced",
+      "1 large onion, diced",
+      "4 garlic cloves, minced",
+      "1 zucchini, diced",
+      "1 sprig fresh rosemary",
+      "3 tbsp extra-virgin olive oil",
+      "1.5L vegetable broth",
+      "Parmesan rind (optional, for umami)",
+      "Salt, pepper, fresh basil to serve"
+    ],
+    "steps": [
+      "Heat 2 tbsp EVOO in large pot. Sauté onion, carrot, celery 8 min until soft.",
+      "Add garlic and rosemary, stir 1 min. Add tomatoes and cook 5 min.",
+      "Add broth, farro, and parmesan rind if using. Simmer 20 min.",
+      "Add cannellini beans, kale, and zucchini. Simmer 15 more min.",
+      "Remove rosemary sprig. Season generously with salt and pepper.",
+      "Ladle into bowls, finish with a generous drizzle of fresh EVOO and fresh basil."
+    ],
+    "macros": {
+      "calories": 390,
+      "protein": "18g",
+      "carbs": "62g",
+      "fat": "9g",
+      "fiber": "16g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Fiber",
+        "amount": "16g (57% RDA)",
+        "emoji": "🌿",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin K1 (from kale)",
+        "amount": "180mcg (150% RDA)",
+        "emoji": "🩸",
+        "highlight": true
+      },
+      {
+        "name": "Polyphenols (EVOO+tomatoes)",
+        "amount": "Longevity-linked compounds",
+        "emoji": "🫒",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "5mg (28% RDA)",
+        "emoji": "⚙️"
+      },
+      {
+        "name": "Folate",
+        "amount": "320mcg (80% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "40mg (44% RDA)",
+        "emoji": "🍋"
+      },
+      {
+        "name": "Magnesium (farro)",
+        "amount": "75mg (18% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Lycopene (cooked tomatoes)",
+        "amount": "Highly bioavailable",
+        "emoji": "🍅"
+      }
+    ],
+    "tip": "Cooked tomatoes release far more lycopene than raw — the heat breaks cell walls and oil increases absorption. This minestrone's EVOO + cooked tomatoes is a perfect lycopene-boosting combination.",
+    "funFact": "Sardinia's Nuoro province has the highest concentration of male centenarians on Earth. Researchers found their minestrone soup — eaten almost daily — was a key dietary pattern differentiator."
+  },
+  {
+    "id": "natto-avocado-toast",
+    "name": "Natto & Avocado Toast on Rye",
+    "cuisine": "Japanese 🇯🇵",
+    "cuisineFlag": "🇯🇵",
+    "emoji": "🍞",
+    "category": "breakfast",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Easy",
+    "time": "10 min",
+    "servings": 1,
+    "description": "The world's richest source of Vitamin K2 on whole rye bread — fermented natto with creamy avocado, pickled ginger, sesame, and nori flakes. An extraordinary nutritional breakfast with a unique flavor profile.",
+    "keyBenefits": [
+      "World's richest K2 source (440mcg!)",
+      "Fermented natto = powerful probiotic",
+      "Heart and bone protective",
+      "High plant protein"
+    ],
+    "ingredients": [
+      "2 slices whole rye bread",
+      "80g natto (fermented soybeans)",
+      "1 ripe avocado",
+      "1 tbsp pickled ginger, chopped",
+      "1 tsp soy sauce",
+      "1 tsp rice vinegar",
+      "1 tsp sesame oil",
+      "1 tbsp sesame seeds (black and white)",
+      "Nori flakes or crushed nori",
+      "½ tsp wasabi (optional)",
+      "Fresh spring onion, sliced"
+    ],
+    "steps": [
+      "Toast rye bread until golden and crisp.",
+      "Mash avocado with a squeeze of lemon, pinch of salt.",
+      "Stir natto with its included sauce (or soy sauce + rice vinegar + sesame oil). Pull and stir vigorously until stringy.",
+      "Spread avocado on toast.",
+      "Top with natto.",
+      "Garnish with pickled ginger, sesame seeds, nori flakes, spring onion, and wasabi if desired."
+    ],
+    "macros": {
+      "calories": 420,
+      "protein": "22g",
+      "carbs": "42g",
+      "fat": "18g",
+      "fiber": "12g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin K2 (MK-7)",
+        "amount": "440mcg (367% RDA)",
+        "emoji": "🦴",
+        "highlight": true
+      },
+      {
+        "name": "Probiotics (natto)",
+        "amount": "Bacillus subtilis natto",
+        "emoji": "🦠",
+        "highlight": true
+      },
+      {
+        "name": "Nattokinase enzyme",
+        "amount": "Blood-clot dissolving",
+        "emoji": "💉",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "4.5mg (25% RDA)",
+        "emoji": "⚙️"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "90mg (21% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Folate",
+        "amount": "220mcg (55% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Fiber (rye)",
+        "amount": "12g (43% RDA)",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Vitamin B2",
+        "amount": "0.5mg (38% RDA)",
+        "emoji": "🔆"
+      }
+    ],
+    "tip": "Natto has a distinctive sticky, stringy texture and pungent smell — it's an acquired taste. Start with a small amount mixed into avocado toast to ease into it. The K2 content is unmatched by any other food.",
+    "funFact": "Natto contains more Vitamin K2 (MK-7) than any other food on Earth — a single serving delivers over 3x the daily requirement. K2 is critical for directing calcium into bones rather than arteries."
+  },
+  {
+    "id": "acai-smoothie-bowl",
+    "name": "Açaí & Brazil Nut Smoothie Bowl",
+    "cuisine": "Brazilian 🇧🇷",
+    "cuisineFlag": "🇧🇷",
+    "emoji": "🫐",
+    "category": "breakfast",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "balanced-omnivore"
+    ],
+    "difficulty": "Easy",
+    "time": "10 min",
+    "servings": 1,
+    "description": "A stunning purple breakfast bowl with frozen açaí base, topped with granola, two Brazil nuts (the world's richest selenium source), mixed berries, coconut flakes, and honey. A daily antioxidant feast.",
+    "keyBenefits": [
+      "Selenium at 247% RDA from 2 Brazil nuts!",
+      "Anthocyanins = potent antioxidants",
+      "ALA Omega-3 from açaí",
+      "Natural energy from complex carbs"
+    ],
+    "ingredients": [
+      "100g frozen açaí pulp (unsweetened)",
+      "1 ripe banana (½ frozen for thickness)",
+      "80ml coconut milk or almond milk",
+      "2 Brazil nuts",
+      "½ cup mixed berries (blueberries, strawberries)",
+      "3 tbsp granola",
+      "2 tbsp unsweetened coconut flakes",
+      "1 tbsp honey or agave",
+      "1 tbsp chia seeds (optional)",
+      "Fresh mint to garnish"
+    ],
+    "steps": [
+      "Blend frozen açaí, banana, and coconut milk until thick and smooth. Add minimal liquid — you want a spoonable consistency, not drinkable.",
+      "Pour into a wide, chilled bowl.",
+      "Arrange toppings in rows: granola, mixed berries, coconut flakes.",
+      "Place 2 Brazil nuts on top (these are essential — only 2 nuts deliver your full daily selenium!).",
+      "Drizzle with honey.",
+      "Garnish with chia seeds and fresh mint. Eat immediately."
+    ],
+    "macros": {
+      "calories": 520,
+      "protein": "12g",
+      "carbs": "65g",
+      "fat": "22g",
+      "fiber": "12g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Selenium (2 Brazil nuts)",
+        "amount": "136mcg (247% RDA)",
+        "emoji": "🌰",
+        "highlight": true
+      },
+      {
+        "name": "Anthocyanins (açaí+berries)",
+        "amount": "Highest ORAC of any food",
+        "emoji": "🫐",
+        "highlight": true
+      },
+      {
+        "name": "ALA Omega-3 (açaí)",
+        "amount": "890mg",
+        "emoji": "🐟",
+        "highlight": true
+      },
+      {
+        "name": "Manganese",
+        "amount": "3.5mg (152% RDA)",
+        "emoji": "🔩"
+      },
+      {
+        "name": "Fiber",
+        "amount": "12g (43% RDA)",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "45mg (50% RDA)",
+        "emoji": "🍋"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "90mg (21% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Potassium",
+        "amount": "750mg (21% RDA)",
+        "emoji": "🫀"
+      }
+    ],
+    "tip": "Never eat more than 3-4 Brazil nuts per day — selenium toxicity (selenosis) occurs above 400mcg daily. Two Brazil nuts is the perfect daily dose: enough for full selenium needs without overdoing it.",
+    "funFact": "Açaí berries have the highest antioxidant capacity (ORAC score) of any food ever tested — over 10x that of blueberries. Amazonian tribes have relied on them as a dietary staple for centuries."
+  },
+  {
+    "id": "nigerian-egusi-soup",
+    "name": "Nigerian Egusi Soup with Spinach",
+    "cuisine": "Nigerian 🇳🇬",
+    "cuisineFlag": "🇳🇬",
+    "emoji": "🥘",
+    "category": "stew",
+    "dietTags": [
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Medium",
+    "time": "60 min",
+    "servings": 4,
+    "description": "West Africa's signature soup made with ground melon seeds (egusi), rich in protein and fat, slow-cooked with palm oil, leafy greens, and aromatic spices. Served with pounded yam or fufu.",
+    "keyBenefits": [
+      "Egusi seeds: exceptional zinc & magnesium",
+      "Palm oil rich in Vitamin E & carotenoids",
+      "Complete protein combo",
+      "Iron from spinach + palm oil vitamin A"
+    ],
+    "ingredients": [
+      "200g ground egusi (melon seeds)",
+      "300g beef or fish (or both)",
+      "200g fresh spinach or bitter leaf",
+      "3 tbsp red palm oil",
+      "1 large onion, blended",
+      "2 scotch bonnet peppers, blended",
+      "1 can (400g) crushed tomatoes",
+      "2 stock cubes",
+      "1 tsp ground crayfish",
+      "Salt and seasoning to taste",
+      "Pounded yam or eba to serve"
+    ],
+    "steps": [
+      "Season and cook beef/fish until tender. Reserve the stock.",
+      "Heat palm oil in pot. Fry blended onion and pepper 10 min until oil floats.",
+      "Add crushed tomatoes, cook 10 more min until thick.",
+      "Mix egusi with a little water to form a paste. Add in lumps to the pot.",
+      "Stir and cook egusi 15 min until fully cooked and incorporated into sauce.",
+      "Add meat/fish, stock, crayfish, and stock cubes. Simmer 10 min.",
+      "Add spinach, stir gently, cook 3 min. Adjust seasoning. Serve with pounded yam."
+    ],
+    "macros": {
+      "calories": 520,
+      "protein": "32g",
+      "carbs": "22g",
+      "fat": "34g",
+      "fiber": "6g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Zinc (egusi seeds)",
+        "amount": "7mg (64% RDA)",
+        "emoji": "🦪",
+        "highlight": true
+      },
+      {
+        "name": "Magnesium (egusi)",
+        "amount": "130mg (31% RDA)",
+        "emoji": "😴",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin E (palm oil)",
+        "amount": "8mg (53% RDA)",
+        "emoji": "🛡️",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "6.5mg (36% RDA)",
+        "emoji": "🔴"
+      },
+      {
+        "name": "Vitamin A (palm carotenoids)",
+        "amount": "950mcg (106% RDA)",
+        "emoji": "👁️",
+        "highlight": true
+      },
+      {
+        "name": "Phosphorus",
+        "amount": "380mg (54% RDA)",
+        "emoji": "🔋"
+      },
+      {
+        "name": "B1 Thiamine",
+        "amount": "0.4mg (33% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Folate",
+        "amount": "180mcg (45% RDA)",
+        "emoji": "🧬"
+      }
+    ],
+    "tip": "Red palm oil (unrefined) is one of nature's richest sources of tocotrienols — a superior form of Vitamin E — and carotenoids. Never substitute with refined palm oil, which has stripped nutrients.",
+    "funFact": "Egusi seeds are from the white-seeded melon (Citrullus lanatus), cultivated across West and Central Africa for 4,000+ years. A 100g serving of egusi provides more protein than most cuts of beef."
+  },
+  {
+    "id": "lebanese-fattoush",
+    "name": "Lebanese Fattoush with Labneh",
+    "cuisine": "Lebanese 🇱🇧",
+    "cuisineFlag": "🇱🇧",
+    "emoji": "🥗",
+    "category": "salad",
+    "dietTags": [
+      "mediterranean",
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "20 min",
+    "servings": 2,
+    "description": "Lebanon's vibrant bread salad — crispy toasted pita with romaine, tomatoes, cucumber, radishes, and fresh herbs in a sumac-lemon dressing, topped with creamy labneh (strained yogurt). A probiotic-rich Mediterranean masterpiece.",
+    "keyBenefits": [
+      "Sumac is rich in anti-inflammatory anthocyanins",
+      "Labneh provides probiotics + calcium",
+      "Diverse phytonutrients in one bowl",
+      "Vitamin C at 100%+ RDA"
+    ],
+    "ingredients": [
+      "2 whole wheat pita breads, torn into pieces",
+      "1 head romaine lettuce, chopped",
+      "2 ripe tomatoes, diced",
+      "1 cucumber, half-moon slices",
+      "6 radishes, thinly sliced",
+      "4 spring onions, sliced",
+      "1 cup fresh mint + flat-leaf parsley",
+      "200g labneh (strained yogurt)",
+      "3 tbsp extra-virgin olive oil",
+      "2 tbsp lemon juice",
+      "1 tsp sumac",
+      "½ tsp dried mint",
+      "Salt and pepper",
+      "Olive oil for crisping pita"
+    ],
+    "steps": [
+      "Toast pita pieces in oven at 180°C with a drizzle of olive oil until golden and crisp, 8-10 min.",
+      "Make sumac dressing: whisk EVOO, lemon juice, sumac, dried mint, salt, and pepper.",
+      "Combine romaine, tomatoes, cucumber, radishes, and spring onions.",
+      "Add fresh mint and parsley — Lebanese fattoush is herb-forward, be generous.",
+      "Toss with dressing. Add crispy pita pieces just before serving (keeps them crunchy).",
+      "Top with dollops of labneh and a drizzle of EVOO. Finish with extra sumac."
+    ],
+    "macros": {
+      "calories": 360,
+      "protein": "14g",
+      "carbs": "38g",
+      "fat": "18g",
+      "fiber": "7g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin C",
+        "amount": "92mg (102% RDA)",
+        "emoji": "🍊",
+        "highlight": true
+      },
+      {
+        "name": "Sumac anthocyanins",
+        "amount": "Anti-inflammatory polyphenols",
+        "emoji": "🍇",
+        "highlight": true
+      },
+      {
+        "name": "Calcium (labneh)",
+        "amount": "320mg (32% RDA)",
+        "emoji": "🦷",
+        "highlight": true
+      },
+      {
+        "name": "Probiotics (labneh)",
+        "amount": "Live cultures",
+        "emoji": "🦠",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin K1",
+        "amount": "160mcg (133% RDA)",
+        "emoji": "🩸"
+      },
+      {
+        "name": "Folate",
+        "amount": "210mcg (53% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "450mcg (50% RDA)",
+        "emoji": "👁️"
+      },
+      {
+        "name": "Polyphenols (EVOO)",
+        "amount": "Heart-protective",
+        "emoji": "🫒"
+      }
+    ],
+    "tip": "Add pita only at the moment of serving — soggy pita destroys the texture contrast that makes fattoush special. Prepare everything else in advance and add pita at the table.",
+    "funFact": "Fattoush was born from frugality — Lebanese cooks used stale leftover bread rather than wasting it. Sumac, the key spice, has been used medicinally in the Middle East for 2,000 years for its astringent, antioxidant properties."
+  }
+]
