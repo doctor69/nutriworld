@@ -1,0 +1,40 @@
+name: Add New Recipes Weekly
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
+  workflow_dispatch:       # Also allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  add-recipes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Add new recipes
+        run: node scripts/add-recipes.js
+
+      - name: Check if recipes.json changed
+        id: diff
+        run: |
+          git diff --quiet src/data/recipes.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated recipes
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "NutriWorld Bot"
+          git config user.email "nutriworld-bot@users.noreply.github.com"
+          git add src/data/recipes.json
+          git commit -m "🍽️ Add new world recipes [automated]"
+          git push
+
+      - name: No new recipes to add
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "All pool recipes already added. Nothing to commit."
