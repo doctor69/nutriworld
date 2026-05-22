@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { recipes } from '../data/recipes.js';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 const cuisineColors = {
   '🇯🇵': '#EF476F',
@@ -290,7 +291,7 @@ const nutrientSpotlights = [
         <div style="font-size: 2.5rem; margin-bottom: 16px;">📋</div>
         <h2 style="font-size: 1.8rem; font-weight: 800; color: var(--text); margin-bottom: 12px;">Want to Know Which Diet Fits You?</h2>
         <p style="color: var(--text-muted); margin-bottom: 28px; line-height: 1.7;">Explore our detailed diet plan breakdowns — with nutrient strengths, gaps, and science-backed guidance on which eating pattern matches your goals.</p>
-        <a href="/diet-plans" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; font-size: 1rem; text-decoration: none; border-radius: 40px;">
+        <a href={`${base}diet-plans`} class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 14px 32px; font-size: 1rem; text-decoration: none; border-radius: 40px;">
           🥗 Explore Diet Plans →
         </a>
       </div>
