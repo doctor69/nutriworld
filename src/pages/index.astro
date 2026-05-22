@@ -1,6 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { nutrients } from '../data/nutrients.js';
+import recipes from '../data/recipes.json';
+import { dietPlans } from '../data/dietPlans.js';
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const nutrientCount = nutrients.length;
+const recipeCount = recipes.length;
+const dietPlanCount = dietPlans.length;
 ---
 <Layout title="Home" description="Discover the power of whole foods. Learn about micronutrients, explore balanced diet plans, and find delicious recipes from around the world.">
 
@@ -16,9 +22,9 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
           <a href={`${base}recipes`} class="btn btn-white">🍲 Browse World Recipes</a>
         </div>
         <div class="hero-stats">
-          <div class="hero-stat"><span class="hs-num" style="color:#FF8C42">27+</span><span>essential micronutrients</span></div>
-          <div class="hero-stat"><span class="hs-num" style="color:#43AA8B">12</span><span>world recipes</span></div>
-          <div class="hero-stat"><span class="hs-num" style="color:#9B5DE5">5</span><span>diet plans</span></div>
+          <div class="hero-stat"><span class="hs-num" style="color:#FF8C42">{nutrientCount}+</span><span>essential micronutrients</span></div>
+          <div class="hero-stat"><span class="hs-num" style="color:#43AA8B">{recipeCount}</span><span>world recipes</span></div>
+          <div class="hero-stat"><span class="hs-num" style="color:#9B5DE5">{dietPlanCount}</span><span>diet plans</span></div>
         </div>
       </div>
       <div class="hero-visual">
@@ -64,6 +70,40 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     </div>
   </section>
 
+  <!-- MALNUTRITION FACTS TICKER -->
+  <div class="facts-ticker-section">
+    <div class="ticker-label">📊 Did You Know?</div>
+    <div class="ticker-wrapper">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+  </div>
+
+  <!-- LATEST NUTRITION NEWS -->
+  <section class="section" id="nutrition-news">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Latest Research & Updates</div>
+        <h2>Nutrition News & Food Science</h2>
+        <p>Real-time findings from leading health organizations and research institutions. <span class="news-refresh-badge">🔄 Auto-refreshes every 6 hours</span></p>
+      </div>
+      <div id="news-grid" class="grid-3 news-grid">
+        <div class="news-loading" style="grid-column:1/-1">
+          <div class="news-spinner"></div>
+          <p>Loading latest nutrition news…</p>
+        </div>
+      </div>
+      <div id="news-error" class="news-error" style="display:none">
+        <p>⚠️ News could not be loaded right now. Visit these trusted sources directly:</p>
+        <div class="news-source-links">
+          <a href="https://www.sciencedaily.com/news/health_medicine/nutrition/" target="_blank" rel="noopener">ScienceDaily Nutrition ↗</a>
+          <a href="https://www.nih.gov/news-events/news-releases" target="_blank" rel="noopener">NIH News ↗</a>
+          <a href="https://www.who.int/news" target="_blank" rel="noopener">WHO News ↗</a>
+        </div>
+      </div>
+      <p class="news-timestamp" id="news-timestamp"></p>
+    </div>
+  </section>
+
   <!-- WHAT WE COVER -->
   <section class="section">
     <div class="container">
@@ -75,19 +115,19 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         <a href={`${base}nutrients`} class="feature-card">
           <div class="fc-icon" style="background:linear-gradient(135deg,#FF8C42,#F9C74F)">🔬</div>
           <h3>Micronutrients Guide</h3>
-          <p>27+ vitamins, minerals & phytonutrients — why you need them and exactly which foods provide them.</p>
+          <p>{nutrientCount}+ vitamins, minerals & phytonutrients — why you need them and exactly which foods provide them.</p>
           <span class="fc-link">Explore →</span>
         </a>
         <a href={`${base}diet-plans`} class="feature-card">
           <div class="fc-icon" style="background:linear-gradient(135deg,#2ECC71,#06D6A0)">🥗</div>
           <h3>Diet Plans</h3>
-          <p>5 evidence-based diets compared — Mediterranean, Plant-Based, Anti-Inflammatory, Longevity & more.</p>
+          <p>{dietPlanCount} evidence-based diets compared — Mediterranean, Plant-Based, Anti-Inflammatory, Longevity & more.</p>
           <span class="fc-link">Explore →</span>
         </a>
         <a href={`${base}recipes`} class="feature-card">
           <div class="fc-icon" style="background:linear-gradient(135deg,#9B5DE5,#6A7FDB)">🍲</div>
           <h3>World Recipes</h3>
-          <p>12 nutrient-dense recipes from Japan, India, Ethiopia, Peru & more — with full macro + micro breakdowns.</p>
+          <p>{recipeCount} nutrient-dense recipes from Japan, India, Ethiopia, Peru & more — with full macro + micro breakdowns.</p>
           <span class="fc-link">Explore →</span>
         </a>
         <a href={`${base}synergies`} class="feature-card">
@@ -145,7 +185,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         ))}
       </div>
       <div class="text-center mt-lg">
-        <a href={`${base}nutrients`} class="btn btn-primary">See All 27+ Micronutrients →</a>
+        <a href={`${base}nutrients`} class="btn btn-primary">See All {nutrientCount}+ Micronutrients →</a>
       </div>
     </div>
   </section>
@@ -375,4 +415,274 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     .hero-visual { display: none; }
     .hero { padding: 3rem 0; }
   }
+
+  /* ── Facts Ticker ── */
+  .facts-ticker-section {
+    background: linear-gradient(135deg, #1a3a2e 0%, #1e4635 100%);
+    padding: 0.9rem 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .ticker-label {
+    flex-shrink: 0;
+    color: #7feba7;
+    font-weight: 700;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0 1.5rem;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255,255,255,0.15);
+  }
+  .ticker-wrapper {
+    flex: 1;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+    mask: linear-gradient(to right, transparent, black 4%, black 96%, transparent);
+  }
+  .ticker-track {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker-scroll 220s linear infinite;
+  }
+  .ticker-track:hover { animation-play-state: paused; }
+  .ticker-item {
+    display: inline-block;
+    padding: 0 3rem;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+  @keyframes ticker-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── News Section ── */
+  .news-refresh-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: var(--primary-light);
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+  .news-grid { gap: 1.5rem; }
+  .news-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: all 0.22s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .news-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--primary-light); }
+  .news-source-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--primary-dark);
+    background: var(--primary-light);
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 50px;
+    width: fit-content;
+  }
+  .news-title { font-size: 0.93rem; font-weight: 700; color: var(--text); line-height: 1.45; margin: 0; }
+  .news-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; flex: 1; margin: 0; }
+  .news-meta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+  .news-date { font-size: 0.73rem; color: var(--text-muted); }
+  .news-read-link { font-size: 0.78rem; font-weight: 600; color: var(--primary-dark); }
+  .news-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  .news-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 0.9s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .news-error {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    grid-column: 1 / -1;
+  }
+  .news-source-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+  .news-source-links a { color: var(--primary-dark); font-weight: 600; font-size: 0.88rem; }
+  .news-timestamp {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 1.25rem;
+  }
 </style>
+
+<script is:inline>
+// ═══════════════════════════════════════════════════════════
+// MALNUTRITION & NUTRITION FACTS TICKER
+// Add new facts here — they'll appear in the scrolling ticker
+// ═══════════════════════════════════════════════════════════
+const TICKER_FACTS = [
+  "🌍 Over 3.5 billion people worldwide suffer from at least one micronutrient deficiency — most don't know it",
+  "🩸 Iron deficiency is the world's most common nutritional disorder, affecting ~2 billion people",
+  "☀️ Vitamin D deficiency is linked to depression, weakened immunity, and a 45% higher risk of early death",
+  "😴 Low magnesium affects 50%+ of Western adults — linked to migraines, anxiety & chronic poor sleep",
+  "🦠 Zinc deficiency impairs immune function and affects an estimated 17% of the global population",
+  "⚡ Vitamin B12 deficiency causes irreversible nerve damage — 86% of vegans are deficient without supplements",
+  "🧠 Iodine deficiency is the world's #1 preventable cause of intellectual disability, affecting 2 billion",
+  "👁️ Vitamin A deficiency causes 250,000–500,000 children to go blind every year",
+  "🦴 Calcium deficiency affects 3.5 billion people globally, predominantly women and girls",
+  "🐟 Omega-3 deficiency is linked to 96,000 preventable deaths per year in the US alone",
+  "🧬 Folate (B9) deficiency during pregnancy causes neural tube defects in ~300,000 births annually",
+  "🔬 Selenium deficiency raises cancer risk — especially in regions with selenium-poor soils",
+  "👶 Malnutrition (including hidden deficiencies) contributes to 45% of all child deaths under age 5",
+  "🥚 90% of Americans don't get enough choline — critical for fetal brain development and liver health",
+  "💊 Potassium deficiency raises blood pressure and stroke risk — most adults consume far below the RDA",
+  "🫀 Vitamin K2 deficiency silently contributes to arterial calcification and bone loss",
+  "🌿 Eating 30 different plant foods per week dramatically diversifies your gut microbiome (APC Gut Study)",
+  "🍅 Cooking tomatoes increases lycopene bioavailability by 4× compared to eating them raw",
+  "🫑 Vitamin C in bell peppers can boost iron absorption from plant foods by up to 67%",
+  "🧄 Garlic's allicin — its key compound — is destroyed by heat. Crush & wait 10 min before cooking",
+  "🥦 Sulforaphane in broccoli activates 200+ genes involved in detoxification and cancer prevention",
+  "🫘 Soaking legumes overnight reduces phytic acid by 50–70%, unlocking more absorbable iron & zinc",
+  "🐟 Sardines & mackerel provide more bioavailable Omega-3 per gram than most fish oil capsules",
+  "🌰 Just 2 Brazil nuts supply your entire daily selenium — more than 4 regularly can be toxic",
+  "🍫 Dark chocolate (85%+) contains more magnesium and iron per serving than most fortified cereals",
+  "🥬 Spinach's iron is non-heme — pair it with vitamin C foods to absorb up to 3× more",
+  "🧪 Ultra-processed foods now make up 60%+ of calories in the US diet and are linked to 57 adverse outcomes",
+  "🫀 The Mediterranean diet reduces cardiovascular disease risk by up to 30% vs. a low-fat diet (PREDIMED trial)",
+  "🧫 Fermented foods (kimchi, kefir, miso) increase gut microbiome diversity more than fiber supplements alone",
+  "🥕 Cooking carrots in healthy fats increases beta-carotene absorption by up to 6.5× compared to raw",
+  "⚠️ Sub-clinical B12 deficiency can cause cognitive decline years before neurological symptoms appear",
+  "🌾 Phytic acid in raw grains blocks up to 80% of iron and zinc absorption — sprouting or fermenting helps",
+  "🥑 Avocado's monounsaturated fats increase lycopene absorption from tomatoes by 4× when eaten together",
+  "🦷 Vitamin D3 + Vitamin K2 together are far more effective at building bone density than either alone",
+  "🧠 Low choline during pregnancy is linked to lifelong impairments in attention and memory in offspring",
+];
+
+(function initTicker() {
+  const track = document.getElementById('ticker-track');
+  if (!track) return;
+  const all = [...TICKER_FACTS, ...TICKER_FACTS]; // duplicate for seamless loop
+  track.innerHTML = all.map(f =>
+    `<span class="ticker-item">${f}</span>`
+  ).join('');
+})();
+
+
+// ═══════════════════════════════════════════════════════════
+// LIVE NUTRITION NEWS FEED  (refreshes every 6 hours via localStorage)
+// ═══════════════════════════════════════════════════════════
+const NEWS_FEEDS = [
+  { url: 'https://www.sciencedaily.com/rss/health_medicine/nutrition.xml',  label: 'ScienceDaily' },
+  { url: 'https://www.nih.gov/news-events/news-releases/rss.xml',           label: 'NIH'          },
+  { url: 'https://www.who.int/feeds/entity/news/en/rss.xml',                label: 'WHO'          },
+];
+const RSS2JSON  = 'https://api.rss2json.com/v1/api.json?count=4&rss_url=';
+const CACHE_KEY = 'nutriworld_news_v3';
+const CACHE_TTL = 6 * 60 * 60 * 1000; // 6 hours
+
+async function fetchFeed(feed) {
+  const res  = await fetch(RSS2JSON + encodeURIComponent(feed.url));
+  const data = await res.json();
+  if (data.status !== 'ok' || !data.items) return [];
+  return data.items.slice(0, 4).map(item => ({
+    title:   item.title || '',
+    link:    item.link  || '#',
+    pubDate: item.pubDate || '',
+    desc:    (item.description || item.content || '')
+               .replace(/<[^>]+>/g, '')
+               .replace(/\s+/g, ' ')
+               .trim()
+               .slice(0, 140) + '…',
+    source:  feed.label,
+  }));
+}
+
+function renderNews(items, ts) {
+  const grid = document.getElementById('news-grid');
+  const tsEl = document.getElementById('news-timestamp');
+  if (!grid) return;
+  grid.innerHTML = items.map(item => {
+    const d = item.pubDate ? new Date(item.pubDate) : null;
+    const dateStr = d && !isNaN(d)
+      ? d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+      : '';
+    return `<a class="news-card" href="${item.link}" target="_blank" rel="noopener noreferrer">
+      <div class="news-source-badge">${item.source}</div>
+      <h4 class="news-title">${item.title}</h4>
+      <p class="news-desc">${item.desc}</p>
+      <div class="news-meta">
+        <span class="news-date">${dateStr}</span>
+        <span class="news-read-link">Read article →</span>
+      </div>
+    </a>`;
+  }).join('');
+  if (tsEl && ts) {
+    const mins = Math.round((Date.now() - ts) / 60000);
+    tsEl.textContent = mins < 2
+      ? 'Just updated'
+      : `Updated ${mins < 60 ? mins + ' min' : Math.round(mins / 60) + ' hr'} ago • Refreshes every 6 hours`;
+  }
+}
+
+async function loadNews() {
+  const grid = document.getElementById('news-grid');
+  const errEl = document.getElementById('news-error');
+  if (!grid) return;
+
+  // Try cache first
+  try {
+    const raw = localStorage.getItem(CACHE_KEY);
+    if (raw) {
+      const { items, ts } = JSON.parse(raw);
+      if (Array.isArray(items) && items.length && Date.now() - ts < CACHE_TTL) {
+        renderNews(items, ts);
+        return;
+      }
+    }
+  } catch (_) {}
+
+  // Fetch live
+  try {
+    const results = await Promise.allSettled(NEWS_FEEDS.map(fetchFeed));
+    const items = results
+      .filter(r => r.status === 'fulfilled')
+      .flatMap(r => r.value)
+      .filter(i => i.title)
+      .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+      .slice(0, 6);
+
+    if (!items.length) throw new Error('empty');
+
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ items, ts: Date.now() })); } catch (_) {}
+    renderNews(items, Date.now());
+  } catch (_) {
+    grid.style.display = 'none';
+    if (errEl) errEl.style.display = 'block';
+  }
+}
+
+loadNews();
+</script>
