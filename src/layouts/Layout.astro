@@ -7,7 +7,7 @@ export interface Props {
 }
 
 const { title, description = 'Discover the power of whole foods. Learn about micronutrients, explore diet plans, and find delicious recipes from around the world.' } = Astro.props;
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 <!DOCTYPE html>
 <html lang="en">
