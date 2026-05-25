@@ -1402,5 +1402,207 @@
     ],
     "tip": "Add pita only at the moment of serving — soggy pita destroys the texture contrast that makes fattoush special. Prepare everything else in advance and add pita at the table.",
     "funFact": "Fattoush was born from frugality — Lebanese cooks used stale leftover bread rather than wasting it. Sumac, the key spice, has been used medicinally in the Middle East for 2,000 years for its astringent, antioxidant properties."
+  },
+  {
+    "id": "egyptian-koshari",
+    "name": "Egyptian Koshari",
+    "cuisine": "Egyptian 🇪🇬",
+    "cuisineFlag": "🇪🇬",
+    "emoji": "🍚",
+    "category": "bowl",
+    "dietTags": [
+      "plant-based",
+      "longevity",
+      "balanced-omnivore"
+    ],
+    "difficulty": "Medium",
+    "time": "55 min",
+    "servings": 4,
+    "description": "Egypt's beloved national dish — a remarkable layering of rice, lentils, macaroni, and chickpeas topped with crispy fried onions, spiced tomato sauce, and garlic vinegar. Pure comfort food that happens to be a nutritional powerhouse.",
+    "keyBenefits": [
+      "4 different plant proteins in one bowl",
+      "Exceptional fiber (20g!)",
+      "Complete amino acid profile from grain+legume combo",
+      "Filling and economical"
+    ],
+    "ingredients": [
+      "1 cup brown lentils",
+      "1 cup short-grain rice",
+      "1 cup macaroni",
+      "1 can (400g) chickpeas",
+      "3 large onions, thinly sliced",
+      "1 can (400g) crushed tomatoes",
+      "4 garlic cloves",
+      "1 tsp cumin",
+      "1 tsp coriander",
+      "½ tsp cinnamon",
+      "¼ tsp cayenne",
+      "3 tbsp olive oil",
+      "2 tbsp red wine vinegar",
+      "Oil for frying onions",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Cook lentils 20 min until tender. Cook rice separately. Cook macaroni al dente. Warm chickpeas.",
+      "Make crispy onions: fry sliced onions in oil over medium-high heat, stirring often, 20-25 min until deep golden and crispy. Drain on paper towel.",
+      "Make tomato sauce: sauté 2 garlic cloves in olive oil, add tomatoes, cumin, coriander, cinnamon, cayenne. Simmer 15 min.",
+      "Make garlic vinegar: crush remaining garlic into red wine vinegar with pinch of salt.",
+      "Assemble in layers: rice, then lentils, then macaroni, then chickpeas.",
+      "Top with crispy onions. Serve with tomato sauce and garlic vinegar on the side."
+    ],
+    "macros": {
+      "calories": 510,
+      "protein": "22g",
+      "carbs": "88g",
+      "fat": "8g",
+      "fiber": "20g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Fiber",
+        "amount": "20g (71% RDA)",
+        "emoji": "🌿",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "8.5mg (47% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "420mcg (105% RDA)",
+        "emoji": "🧬",
+        "highlight": true
+      },
+      {
+        "name": "Zinc",
+        "amount": "4.2mg (38% RDA)",
+        "emoji": "🦪"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "110mg (26% RDA)",
+        "emoji": "😴"
+      },
+      {
+        "name": "B1 Thiamine",
+        "amount": "0.55mg (46% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Potassium",
+        "amount": "1100mg (31% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Complete protein (grain+legume)",
+        "amount": "All essential amino acids",
+        "emoji": "🏆"
+      }
+    ],
+    "tip": "The grain-legume combination (rice + lentils + chickpeas) creates a complete protein profile equivalent to meat — this is the foundation of healthy eating across the developing world for thousands of years.",
+    "funFact": "Koshari is sold on almost every street corner in Cairo. It's a dish born from the 19th-century fusion of Indian, Italian, and Egyptian culinary traditions. At ~50 cents per serving, it's both the cheapest and most nutritious meal in Egypt."
+  },
+  {
+    "id": "swedish-gravlax",
+    "name": "Swedish Gravlax with Dill Mustard Sauce",
+    "cuisine": "Swedish 🇸🇪",
+    "cuisineFlag": "🇸🇪",
+    "emoji": "🐟",
+    "category": "salad",
+    "dietTags": [
+      "mediterranean",
+      "anti-inflammatory",
+      "balanced-omnivore"
+    ],
+    "difficulty": "Easy",
+    "time": "15 min (+ 48h cure)",
+    "servings": 4,
+    "description": "Scandinavian cured salmon — raw salmon dry-cured in salt, sugar, and dill for 48 hours. Served thinly sliced with hovmästarsås (sweet mustard-dill sauce) and rye crispbread. One of the world's most omega-3-rich dishes.",
+    "keyBenefits": [
+      "Highest Omega-3 per serving of any recipe",
+      "Zero cooking preserves heat-sensitive B vitamins",
+      "Vitamin D near 100% RDA",
+      "Astaxanthin from raw salmon"
+    ],
+    "ingredients": [
+      "600g center-cut salmon fillet, skin on",
+      "3 tbsp coarse sea salt",
+      "2 tbsp sugar",
+      "1 tbsp white peppercorns, crushed",
+      "Large bunch fresh dill",
+      "For sauce: 3 tbsp Swedish mustard (or Dijon)",
+      "1 tbsp honey",
+      "2 tbsp white wine vinegar",
+      "4 tbsp neutral oil",
+      "Fresh dill, salt, white pepper",
+      "Rye crispbread and lemon to serve"
+    ],
+    "steps": [
+      "Mix salt, sugar, and crushed peppercorns.",
+      "Place salmon skin-down. Coat flesh with salt mixture. Cover completely with dill.",
+      "Wrap tightly in cling film, place in dish, weight down with a heavy pan.",
+      "Refrigerate 48 hours, flipping every 12 hours and pouring off liquid.",
+      "Unwrap, scrape off dill and seasoning. Pat dry.",
+      "Make sauce: whisk mustard, honey, vinegar. Slowly drizzle in oil while whisking. Fold in fresh dill.",
+      "Slice salmon very thin at an angle. Serve with sauce, rye crispbread, and lemon."
+    ],
+    "macros": {
+      "calories": 320,
+      "protein": "38g",
+      "carbs": "8g",
+      "fat": "14g",
+      "fiber": "1g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Omega-3 (DHA+EPA)",
+        "amount": "3200mg (640% AI)",
+        "emoji": "🐟",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin D",
+        "amount": "16mcg (107% RDA)",
+        "emoji": "☀️",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "4.1mcg (171% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "Astaxanthin (raw)",
+        "amount": "Most bioavailable form",
+        "emoji": "🦐",
+        "highlight": true
+      },
+      {
+        "name": "Selenium",
+        "amount": "52mcg (95% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Vitamin B6",
+        "amount": "0.9mg (55% RDA)",
+        "emoji": "🧠"
+      },
+      {
+        "name": "Potassium",
+        "amount": "920mg (26% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Choline",
+        "amount": "180mg (33% RDA)",
+        "emoji": "🧠"
+      }
+    ],
+    "tip": "Curing is not cooking — the salt draws moisture out and denatures proteins via osmosis. The result is firmer, silkier salmon with fully intact omega-3s and B vitamins that heat would diminish.",
+    "funFact": "Gravlax comes from \"grav\" (grave/buried) + \"lax\" (salmon) — medieval Scandinavian fishermen literally buried salted salmon underground for fermentation. The Greenlandic Inuit, who eat similar raw-cured fish, have remarkably low rates of heart disease."
   }
 ]
