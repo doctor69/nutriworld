@@ -1604,5 +1604,204 @@
     ],
     "tip": "Curing is not cooking — the salt draws moisture out and denatures proteins via osmosis. The result is firmer, silkier salmon with fully intact omega-3s and B vitamins that heat would diminish.",
     "funFact": "Gravlax comes from \"grav\" (grave/buried) + \"lax\" (salmon) — medieval Scandinavian fishermen literally buried salted salmon underground for fermentation. The Greenlandic Inuit, who eat similar raw-cured fish, have remarkably low rates of heart disease."
+  },
+  {
+    "id": "pakistani-saag",
+    "name": "Pakistani Saag (Spiced Mustard Greens)",
+    "cuisine": "Pakistani 🇵🇰",
+    "cuisineFlag": "🇵🇰",
+    "emoji": "🥬",
+    "category": "stew",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "longevity"
+    ],
+    "difficulty": "Medium",
+    "time": "90 min",
+    "servings": 4,
+    "description": "Punjab's slow-cooked mustard and spinach purée with ginger, garlic, and ghee tadka — one of the most mineral-rich dishes in South Asian cuisine. Traditionally eaten with makki di roti (cornbread) in winter.",
+    "keyBenefits": [
+      "Mustard greens: most Vitamin K1 per gram",
+      "Ghee aids fat-soluble vitamin absorption",
+      "Sulforaphane from mustard greens",
+      "Exceptional iron for plant-based"
+    ],
+    "ingredients": [
+      "500g mustard greens (sarson), roughly chopped",
+      "300g spinach",
+      "100g bathua (lamb's quarters) or extra spinach",
+      "1 large onion, diced",
+      "6 garlic cloves",
+      "2 inch ginger",
+      "2 green chilies",
+      "1 tbsp ghee (for tadka)",
+      "1 tsp cumin seeds",
+      "1 dry red chili",
+      "1 tbsp makki flour (cornmeal) to thicken",
+      "Salt to taste",
+      "Makki di roti or whole wheat flatbread, fresh butter to serve"
+    ],
+    "steps": [
+      "Wash and roughly chop all greens. Boil in minimal water with ginger, garlic, and green chilies for 45-60 min until very soft.",
+      "Mash thoroughly with a wooden churner (mathani) or blend coarsely — keep some texture.",
+      "Add makki flour, stir in and cook 10 more min until thickened.",
+      "Season with salt.",
+      "Make tadka: heat ghee until smoking, add cumin seeds and dry red chili. Sizzle 30 sec.",
+      "Pour tadka over saag. Serve with roti and a small cube of white butter."
+    ],
+    "macros": {
+      "calories": 220,
+      "protein": "12g",
+      "carbs": "22g",
+      "fat": "9g",
+      "fiber": "10g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin K1 (mustard greens)",
+        "amount": "720mcg (600% RDA)",
+        "emoji": "🩸",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "890mcg (99% RDA)",
+        "emoji": "👁️",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "7.5mg (42% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "Sulforaphane (mustard)",
+        "amount": "Cancer-protective isothiocyanate",
+        "emoji": "🥦",
+        "highlight": true
+      },
+      {
+        "name": "Calcium",
+        "amount": "380mg (38% RDA)",
+        "emoji": "🦷"
+      },
+      {
+        "name": "Folate",
+        "amount": "310mcg (78% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "78mg (87% RDA)",
+        "emoji": "🍊"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "88mg (21% RDA)",
+        "emoji": "😴"
+      }
+    ],
+    "tip": "The ghee tadka isn't just for flavor — fat dramatically increases absorption of Vitamins A and K1 from the greens. This is why traditional cooking instinctively combined leafy greens with fat.",
+    "funFact": "Mustard greens (sarson) have the highest Vitamin K1 content of any vegetable — exceeding even kale. Punjab has one of the lowest osteoporosis rates in South Asia, and saag consumption is considered a contributing factor."
+  },
+  {
+    "id": "spanish-gazpacho",
+    "name": "Andalusian Gazpacho",
+    "cuisine": "Spanish 🇪🇸",
+    "cuisineFlag": "🇪🇸",
+    "emoji": "🍅",
+    "category": "soup",
+    "dietTags": [
+      "mediterranean",
+      "plant-based",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "15 min (+ 2h chill)",
+    "servings": 4,
+    "description": "Andalusia's legendary cold tomato soup — raw blended tomatoes, cucumber, bell pepper, garlic, and sherry vinegar with best-quality EVOO. Completely uncooked, maximizing heat-sensitive nutrients.",
+    "keyBenefits": [
+      "Zero cooking preserves all Vitamin C",
+      "Lycopene bioavailable via EVOO",
+      "Rich in polyphenols",
+      "Natural hydration with electrolytes"
+    ],
+    "ingredients": [
+      "1kg ripe vine tomatoes",
+      "1 green bell pepper",
+      "1 small cucumber",
+      "1 small red onion",
+      "2 garlic cloves",
+      "4 tbsp extra-virgin olive oil",
+      "2 tbsp sherry vinegar (or red wine vinegar)",
+      "1 tsp salt",
+      "100ml cold water",
+      "Toasted bread, diced cucumber, tomato for garnish"
+    ],
+    "steps": [
+      "Roughly chop all vegetables.",
+      "Blend tomatoes, pepper, cucumber, onion, and garlic until very smooth.",
+      "With blender running, slowly stream in olive oil (creates an emulsion).",
+      "Add vinegar, salt, and water. Blend again.",
+      "Pass through fine sieve for silky texture (optional but traditional).",
+      "Refrigerate minimum 2 hours until very cold.",
+      "Serve in chilled bowls with diced garnishes and an EVOO drizzle."
+    ],
+    "macros": {
+      "calories": 180,
+      "protein": "3g",
+      "carbs": "18g",
+      "fat": "11g",
+      "fiber": "4g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Lycopene",
+        "amount": "18mg (300% optimal)",
+        "emoji": "🍅",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "85mg (94% RDA)",
+        "emoji": "🍊",
+        "highlight": true
+      },
+      {
+        "name": "EVOO polyphenols",
+        "amount": "Oleocanthal (anti-inflammatory)",
+        "emoji": "🫒",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "480mcg (53% RDA)",
+        "emoji": "👁️"
+      },
+      {
+        "name": "Potassium",
+        "amount": "850mg (24% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Quercetin (tomato skin)",
+        "amount": "Flavonoid antioxidant",
+        "emoji": "🧅"
+      },
+      {
+        "name": "Vitamin K1",
+        "amount": "40mcg (33% RDA)",
+        "emoji": "🩸"
+      },
+      {
+        "name": "Folate",
+        "amount": "75mcg (19% RDA)",
+        "emoji": "🧬"
+      }
+    ],
+    "tip": "Use the ripest, most flavorful tomatoes you can find — this recipe has no heat to mask imperfections. Heirloom tomatoes contain 50% more lycopene than standard varieties.",
+    "funFact": "Gazpacho originated among Andalusian farm workers who needed a cold, hydrating, calorie-dense meal in the summer heat. Modern research shows it significantly lowers blood pressure — attributed to its nitrates, potassium, and polyphenols working together."
   }
 ]
