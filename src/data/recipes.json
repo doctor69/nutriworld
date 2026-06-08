@@ -1803,5 +1803,204 @@
     ],
     "tip": "Use the ripest, most flavorful tomatoes you can find — this recipe has no heat to mask imperfections. Heirloom tomatoes contain 50% more lycopene than standard varieties.",
     "funFact": "Gazpacho originated among Andalusian farm workers who needed a cold, hydrating, calorie-dense meal in the summer heat. Modern research shows it significantly lowers blood pressure — attributed to its nitrates, potassium, and polyphenols working together."
+  },
+  {
+    "id": "vietnamese-pho",
+    "name": "Vietnamese Beef Pho",
+    "cuisine": "Vietnamese 🇻🇳",
+    "cuisineFlag": "🇻🇳",
+    "emoji": "🍜",
+    "category": "soup",
+    "dietTags": [
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Medium",
+    "time": "60 min",
+    "servings": 4,
+    "description": "Vietnam's iconic clear broth soup — slow-simmered with charred ginger, star anise, cinnamon, and cloves, served with rice noodles, tender beef slices, and an aromatic herb plate.",
+    "keyBenefits": [
+      "Collagen-rich bone broth",
+      "Anti-inflammatory spices",
+      "Complete protein",
+      "Gut-healing gelatin"
+    ],
+    "ingredients": [
+      "1kg beef bones (knuckle/marrow)",
+      "300g beef sirloin, thinly sliced",
+      "200g flat rice noodles (banh pho)",
+      "1 large onion, halved",
+      "1 large piece ginger (8cm)",
+      "3 star anise",
+      "1 cinnamon stick",
+      "4 cloves",
+      "1 tsp black peppercorns",
+      "2 tbsp fish sauce",
+      "1 tsp rock sugar",
+      "Bean sprouts, Thai basil, lime, chili to serve",
+      "Spring onions and coriander to garnish"
+    ],
+    "steps": [
+      "Char onion and ginger halves directly over gas flame or under broiler until blackened. This is essential for the authentic smoky-sweet flavor.",
+      "Blanch beef bones in boiling water 5 min, drain, and rinse well to remove impurities.",
+      "Toast star anise, cinnamon, and cloves in dry pan 1 min until fragrant.",
+      "Simmer bones in 3L water with charred onion, ginger, and toasted spices for 45 min. Skim frequently.",
+      "Season broth with fish sauce and rock sugar. Strain through fine sieve.",
+      "Cook noodles per package instructions. Divide into bowls.",
+      "Layer raw beef slices over noodles — hot broth will cook them. Pour boiling broth over.",
+      "Serve with bean sprouts, Thai basil, lime wedges, and chili slices on the side."
+    ],
+    "macros": {
+      "calories": 420,
+      "protein": "35g",
+      "carbs": "42g",
+      "fat": "12g",
+      "fiber": "2g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Collagen & Gelatin (bone broth)",
+        "amount": "Gut-healing proteins",
+        "emoji": "🦴",
+        "highlight": true
+      },
+      {
+        "name": "Zinc",
+        "amount": "6mg (55% RDA)",
+        "emoji": "🦪",
+        "highlight": true
+      },
+      {
+        "name": "Iron (heme)",
+        "amount": "4mg (22% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "2.8mcg (117% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Selenium",
+        "amount": "28mcg (51% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Star anise (anethole)",
+        "amount": "Anti-inflammatory, antimicrobial",
+        "emoji": "⭐"
+      },
+      {
+        "name": "Potassium",
+        "amount": "680mg (19% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Phosphorus",
+        "amount": "280mg (40% RDA)",
+        "emoji": "🔋"
+      }
+    ],
+    "tip": "The charring step is non-negotiable — it creates Maillard reaction compounds that give pho its distinctive deep, complex flavor and adds anti-inflammatory phenols.",
+    "funFact": "Pho originated in northern Vietnam in the early 20th century. Bone broth simmered for 6-12 hours produces high levels of glycine and proline — amino acids that repair the intestinal lining."
+  },
+  {
+    "id": "turkish-red-lentil-soup",
+    "name": "Turkish Red Lentil Soup (Mercimek Çorbası)",
+    "cuisine": "Turkish 🇹🇷",
+    "cuisineFlag": "🇹🇷",
+    "emoji": "🍲",
+    "category": "soup",
+    "dietTags": [
+      "plant-based",
+      "mediterranean",
+      "longevity"
+    ],
+    "difficulty": "Easy",
+    "time": "35 min",
+    "servings": 4,
+    "description": "Turkey's most beloved soup — silky red lentils blended smooth with onion, carrot, and cumin, finished with a sizzling paprika-butter drizzle and fresh lemon. Eaten across the country at every meal.",
+    "keyBenefits": [
+      "Exceptional folate source",
+      "Paprika is rich in Vitamin A & C",
+      "Plant-based complete meal",
+      "Easy to digest"
+    ],
+    "ingredients": [
+      "1.5 cups red lentils, rinsed",
+      "1 large onion, diced",
+      "2 carrots, diced",
+      "3 garlic cloves, minced",
+      "2 tsp cumin",
+      "1 tsp turmeric",
+      "1 tsp sweet paprika",
+      "1.5L vegetable broth",
+      "2 tbsp olive oil",
+      "1 tbsp butter",
+      "1 tsp hot paprika (for drizzle)",
+      "Lemon wedges, dried mint to serve"
+    ],
+    "steps": [
+      "Sauté onion in olive oil 5 min. Add garlic, cumin, and turmeric, stir 1 min.",
+      "Add carrots and lentils, cover with broth. Bring to boil then simmer 20 min.",
+      "Blend completely smooth with immersion blender. Adjust consistency with water.",
+      "Season with salt. Prepare paprika drizzle: melt butter, add hot paprika, stir 30 sec.",
+      "Serve soup in bowls, drizzle paprika butter on top, finish with dried mint and lemon."
+    ],
+    "macros": {
+      "calories": 340,
+      "protein": "18g",
+      "carbs": "52g",
+      "fat": "7g",
+      "fiber": "14g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Folate",
+        "amount": "360mcg (90% RDA)",
+        "emoji": "🧬",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "7mg (39% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin A (paprika)",
+        "amount": "680mcg (76% RDA)",
+        "emoji": "👁️",
+        "highlight": true
+      },
+      {
+        "name": "Potassium",
+        "amount": "820mg (23% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "B1 Thiamine",
+        "amount": "0.45mg (38% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Fiber",
+        "amount": "14g (50% RDA)",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "72mg (17% RDA)",
+        "emoji": "😴"
+      },
+      {
+        "name": "Curcumin (turmeric)",
+        "amount": "Anti-inflammatory",
+        "emoji": "🟡"
+      }
+    ],
+    "tip": "Red lentils cook down completely without soaking — the fastest legume to prepare. The paprika butter drizzle isn't just decorative; it adds fat-soluble carotenoids that increase absorption.",
+    "funFact": "Mercimek çorbası is served at breakfast, lunch, and dinner across Turkey. Red lentils have been cultivated in Anatolia for over 8,000 years — among the oldest cultivated foods in human history."
   }
 ]
