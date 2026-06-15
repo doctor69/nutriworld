@@ -2002,5 +2002,202 @@
     ],
     "tip": "Red lentils cook down completely without soaking — the fastest legume to prepare. The paprika butter drizzle isn't just decorative; it adds fat-soluble carotenoids that increase absorption.",
     "funFact": "Mercimek çorbası is served at breakfast, lunch, and dinner across Turkey. Red lentils have been cultivated in Anatolia for over 8,000 years — among the oldest cultivated foods in human history."
+  },
+  {
+    "id": "filipino-sinigang",
+    "name": "Filipino Sinigang na Baboy",
+    "cuisine": "Filipino 🇵🇭",
+    "cuisineFlag": "🇵🇭",
+    "emoji": "🥣",
+    "category": "soup",
+    "dietTags": [
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "60 min",
+    "servings": 4,
+    "description": "The Philippines' beloved sour tamarind soup — pork ribs slow-simmered with an abundance of vegetables in a naturally sour tamarind broth. The sourness comes from whole fruits — tamarind, green tomatoes, or guava — making it exceptionally high in Vitamin C.",
+    "keyBenefits": [
+      "Tamarind: exceptional tartaric acid, minerals",
+      "High diverse vegetables = phytonutrient density",
+      "Collagen from slow-cooked pork",
+      "Vitamin C from souring agents boosts iron absorption"
+    ],
+    "ingredients": [
+      "800g pork ribs or pork belly",
+      "1 packet (40g) tamarind soup base (or 200g fresh tamarind)",
+      "200g kangkong (water spinach) or spinach",
+      "1 large eggplant, chunked",
+      "200g green beans",
+      "2 medium tomatoes, quartered",
+      "1 onion, quartered",
+      "2 taro roots, peeled and cubed (optional)",
+      "2L water",
+      "2 tbsp fish sauce",
+      "Green chili, fresh kangkong to serve"
+    ],
+    "steps": [
+      "Boil pork ribs in water with onion and tomatoes. Skim foam diligently. Simmer 40 min.",
+      "Add taro (if using) and eggplant. Cook 10 min.",
+      "Dissolve tamarind base in a cup of broth, add to pot.",
+      "Add green beans, cook 5 min.",
+      "Add kangkong last, cook 2 min until just wilted.",
+      "Season generously with fish sauce. The broth should be distinctly sour.",
+      "Serve in deep bowls with white rice and fish sauce with chili on the side."
+    ],
+    "macros": {
+      "calories": 480,
+      "protein": "38g",
+      "carbs": "28g",
+      "fat": "22g",
+      "fiber": "8g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Vitamin C (tamarind + veggies)",
+        "amount": "110mg (122% RDA)",
+        "emoji": "🍊",
+        "highlight": true
+      },
+      {
+        "name": "Collagen (slow pork)",
+        "amount": "Joint and skin proteins",
+        "emoji": "🦴",
+        "highlight": true
+      },
+      {
+        "name": "Iron",
+        "amount": "6.2mg (34% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "1.8mcg (75% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Potassium",
+        "amount": "1150mg (33% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Thiamine B1 (pork)",
+        "amount": "0.7mg (58% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Zinc",
+        "amount": "4.5mg (41% RDA)",
+        "emoji": "🦪"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "82mg (20% RDA)",
+        "emoji": "😴"
+      }
+    ],
+    "tip": "Sinigang is intentionally very sour — don't hold back on the tamarind. The high acidity has a practical function: it helps break down tough collagen in the pork and increases mineral solubility in the broth.",
+    "funFact": "Sinigang was voted the World's Best Soup by TasteAtlas in 2021. The Philippines' cuisine is one of the most diverse in Asia, and sinigang's acidic base can be made with tamarind, guava, green mango, bilimbi, or calamansi — each adding its own micronutrients."
+  },
+  {
+    "id": "jamaican-callaloo",
+    "name": "Jamaican Callaloo & Saltfish",
+    "cuisine": "Jamaican 🇯🇲",
+    "cuisineFlag": "🇯🇲",
+    "emoji": "🥬",
+    "category": "stew",
+    "dietTags": [
+      "balanced-omnivore",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "30 min",
+    "servings": 3,
+    "description": "Jamaica's iconic national dish — callaloo (a leafy green similar to spinach, rich in iron) sautéed with desalted saltfish (cod), scotch bonnet, thyme, and tomatoes. The Caribbean's most nutrient-dense everyday meal.",
+    "keyBenefits": [
+      "Callaloo: more iron than spinach",
+      "Saltfish: exceptional iodine & B12 source",
+      "Scotch bonnet: highest capsaicin = metabolism boost",
+      "Complete protein from fish+greens"
+    ],
+    "ingredients": [
+      "400g callaloo (or spinach/amaranth leaves)",
+      "200g saltfish (salted cod), desalted",
+      "1 onion, diced",
+      "3 garlic cloves, minced",
+      "2 tomatoes, diced",
+      "1 scotch bonnet pepper, seeded and minced",
+      "4 spring onions",
+      "3 sprigs fresh thyme",
+      "2 tbsp coconut oil",
+      "Black pepper to taste",
+      "Fried dumplings or hard dough bread to serve"
+    ],
+    "steps": [
+      "Desalt fish: soak in cold water 4-6 hours changing water twice (or boil 10 min, drain). Flake into pieces, removing bones.",
+      "Sauté onion, garlic, and spring onions in coconut oil 3 min.",
+      "Add scotch bonnet and thyme, stir 1 min.",
+      "Add tomatoes and cook 3 min until soft.",
+      "Add callaloo and saltfish, fold together gently.",
+      "Cover and cook on medium-low 10-12 min until callaloo is wilted and tender.",
+      "Adjust seasoning. Serve with fried dumplings or hard dough bread."
+    ],
+    "macros": {
+      "calories": 310,
+      "protein": "34g",
+      "carbs": "18g",
+      "fat": "10g",
+      "fiber": "6g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Iron (callaloo)",
+        "amount": "8mg (44% RDA)",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "Iodine (saltfish)",
+        "amount": "180mcg (120% RDA)",
+        "emoji": "🦋",
+        "highlight": true
+      },
+      {
+        "name": "B12 (saltfish)",
+        "amount": "2.9mcg (121% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin A",
+        "amount": "760mcg (84% RDA)",
+        "emoji": "👁️",
+        "highlight": true
+      },
+      {
+        "name": "Vitamin C (scotch bonnet)",
+        "amount": "140mg (156% RDA)",
+        "emoji": "🍊"
+      },
+      {
+        "name": "Capsaicin (scotch bonnet)",
+        "amount": "Metabolism & anti-inflammatory",
+        "emoji": "🌶️"
+      },
+      {
+        "name": "Calcium",
+        "amount": "210mg (21% RDA)",
+        "emoji": "🦷"
+      },
+      {
+        "name": "Folate",
+        "amount": "195mcg (49% RDA)",
+        "emoji": "🧬"
+      }
+    ],
+    "tip": "Callaloo is the Caribbean name for several leafy greens (amaranth, taro leaves, or water spinach). All are exceptionally high in iron — when served with scotch bonnet (which is extremely high in Vitamin C), iron absorption is dramatically boosted.",
+    "funFact": "Jamaica's National Dish Act lists callaloo and saltfish as the official national breakfast. Scotch bonnet peppers rank among the hottest in the world and contain 10x more Vitamin C than an orange per gram."
   }
 ]
