@@ -2199,5 +2199,207 @@
     ],
     "tip": "Callaloo is the Caribbean name for several leafy greens (amaranth, taro leaves, or water spinach). All are exceptionally high in iron — when served with scotch bonnet (which is extremely high in Vitamin C), iron absorption is dramatically boosted.",
     "funFact": "Jamaica's National Dish Act lists callaloo and saltfish as the official national breakfast. Scotch bonnet peppers rank among the hottest in the world and contain 10x more Vitamin C than an orange per gram."
+  },
+  {
+    "id": "uzbek-plov",
+    "name": "Uzbek Lamb Plov",
+    "cuisine": "Uzbek 🇺🇿",
+    "cuisineFlag": "🇺🇿",
+    "emoji": "🍚",
+    "category": "bowl",
+    "dietTags": [
+      "balanced-omnivore",
+      "longevity"
+    ],
+    "difficulty": "Hard",
+    "time": "90 min",
+    "servings": 6,
+    "description": "Central Asia's greatest dish — aromatic basmati rice slow-cooked in lamb fat with whole garlic, cumin, barberries, and golden carrots in a heavy cast-iron kazan. A UNESCO-listed cultural heritage dish.",
+    "keyBenefits": [
+      "Barberries: highest berberine content (blood sugar regulation)",
+      "Lamb: exceptional zinc & B12",
+      "Whole garlic cloves: allicin bioavailability",
+      "Complex carb + protein balance"
+    ],
+    "ingredients": [
+      "500g lamb shoulder, cubed",
+      "400g basmati rice, rinsed",
+      "3 large carrots, julienned",
+      "2 whole heads garlic",
+      "2 large onions, sliced",
+      "2 tbsp cumin seeds",
+      "½ cup barberries (zereshk) or dried cranberries",
+      "1 tsp turmeric",
+      "100ml neutral oil or lamb fat",
+      "700ml water or broth",
+      "1 tsp black pepper",
+      "Fresh dill and spring onion to serve"
+    ],
+    "steps": [
+      "Heat oil until smoking in large heavy pot (kazan or Dutch oven). Fry lamb in batches until browned on all sides.",
+      "Add onions, cook until deep golden 15 min. Add carrots, cook 10 min.",
+      "Add cumin, turmeric, pepper, and half the barberries. Stir 2 min.",
+      "Add water or broth, bring to boil, simmer 20 min.",
+      "Push whole unpeeled garlic heads into the meat mixture.",
+      "Add rinsed rice in an even layer. Do NOT stir.",
+      "Cook uncovered until water is absorbed to rice level. Reduce to lowest heat, cover, steam 20 min.",
+      "Fluff from edges in. Top with remaining barberries, fresh dill. Serve directly from the pot."
+    ],
+    "macros": {
+      "calories": 620,
+      "protein": "34g",
+      "carbs": "72g",
+      "fat": "20g",
+      "fiber": "5g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Zinc (lamb)",
+        "amount": "8mg (73% RDA)",
+        "emoji": "🦪",
+        "highlight": true
+      },
+      {
+        "name": "B12 (lamb)",
+        "amount": "3.8mcg (158% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "Berberine (barberries)",
+        "amount": "Blood sugar regulation",
+        "emoji": "🔴",
+        "highlight": true
+      },
+      {
+        "name": "Allicin (whole garlic)",
+        "amount": "Antimicrobial, cardiovascular",
+        "emoji": "🧄",
+        "highlight": true
+      },
+      {
+        "name": "Iron (heme)",
+        "amount": "5.5mg (31% RDA)",
+        "emoji": "🔴"
+      },
+      {
+        "name": "Selenium",
+        "amount": "38mcg (69% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Niacin (B3)",
+        "amount": "9mg (56% RDA)",
+        "emoji": "🧬"
+      },
+      {
+        "name": "Magnesium",
+        "amount": "68mg (16% RDA)",
+        "emoji": "😴"
+      }
+    ],
+    "tip": "The whole garlic heads, cooked gently in the steam, become sweet and mild — squeeze them out onto the rice. Slow-roasted garlic has dramatically reduced pungency but retains allicin precursors.",
+    "funFact": "Plov is to Uzbekistan what pizza is to Italy — a national obsession and cultural ritual. UNESCO inscribed \"plov culture\" in Uzbekistan on its Intangible Cultural Heritage list in 2016. A master plov cook (oshpaz) is a respected profession."
+  },
+  {
+    "id": "polish-borscht",
+    "name": "Polish Beet Borscht (Barszcz)",
+    "cuisine": "Polish 🇵🇱",
+    "cuisineFlag": "🇵🇱",
+    "emoji": "🍵",
+    "category": "soup",
+    "dietTags": [
+      "plant-based",
+      "anti-inflammatory",
+      "balanced-omnivore"
+    ],
+    "difficulty": "Easy",
+    "time": "50 min",
+    "servings": 4,
+    "description": "Eastern Europe's iconic deep-crimson beet soup — sweet-sour roasted beets with vegetable broth, apple, and a touch of red wine vinegar, garnished with fresh dill and sour cream. High in betalains — one of the most potent antioxidants known.",
+    "keyBenefits": [
+      "Betalains from beets: unique antioxidants not found elsewhere",
+      "Nitrates lower blood pressure naturally",
+      "High folate for cell repair",
+      "Liver-protective compounds"
+    ],
+    "ingredients": [
+      "600g raw beetroot, peeled and diced",
+      "2 medium carrots, diced",
+      "2 celery stalks, diced",
+      "1 onion, diced",
+      "1 apple, peeled and diced",
+      "4 garlic cloves",
+      "1.5L vegetable or beef broth",
+      "3 tbsp red wine vinegar",
+      "1 tsp sugar",
+      "1 bay leaf",
+      "4 allspice berries",
+      "Fresh dill, sour cream to serve",
+      "Salt and black pepper"
+    ],
+    "steps": [
+      "Roast diced beets at 200°C for 25 min with drizzle of oil until slightly caramelized.",
+      "Sauté onion, carrot, and celery in pot 8 min. Add garlic, cook 1 min.",
+      "Add broth, roasted beets, apple, bay leaf, and allspice. Bring to boil.",
+      "Simmer 20 min until all vegetables are completely tender.",
+      "Blend smooth (or strain for clear borscht). Add vinegar and sugar.",
+      "Season generously with salt and pepper.",
+      "Serve with fresh dill, a dollop of sour cream, and rye bread."
+    ],
+    "macros": {
+      "calories": 180,
+      "protein": "5g",
+      "carbs": "32g",
+      "fat": "4g",
+      "fiber": "7g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Betalains (beets)",
+        "amount": "Unique class of antioxidants",
+        "emoji": "💜",
+        "highlight": true
+      },
+      {
+        "name": "Nitrates → NO",
+        "amount": "Lowers blood pressure by 4-8 mmHg",
+        "emoji": "❤️",
+        "highlight": true
+      },
+      {
+        "name": "Folate",
+        "amount": "290mcg (73% RDA)",
+        "emoji": "🧬",
+        "highlight": true
+      },
+      {
+        "name": "Potassium",
+        "amount": "820mg (23% RDA)",
+        "emoji": "🫀"
+      },
+      {
+        "name": "Manganese",
+        "amount": "1.6mg (70% RDA)",
+        "emoji": "🌾"
+      },
+      {
+        "name": "Vitamin C",
+        "amount": "22mg (24% RDA)",
+        "emoji": "🍊"
+      },
+      {
+        "name": "Iron",
+        "amount": "3.2mg (18% RDA)",
+        "emoji": "🔴"
+      },
+      {
+        "name": "Betaine",
+        "amount": "Liver-protective methyl donor",
+        "emoji": "🫀"
+      }
+    ],
+    "tip": "Roasting beets before adding to soup dramatically concentrates their flavor and caramelizes natural sugars. The deep crimson color indicates high betalain concentration — don't boil away the color.",
+    "funFact": "Beet betalains are pH-sensitive indicators — they turn yellow in acid and deep red in alkaline conditions. Studies show dietary nitrates from beets can improve athletic performance by 2-3% — used by professional athletes worldwide."
   }
 ]
