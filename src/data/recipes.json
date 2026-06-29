@@ -2401,5 +2401,201 @@
     ],
     "tip": "Roasting beets before adding to soup dramatically concentrates their flavor and caramelizes natural sugars. The deep crimson color indicates high betalain concentration — don't boil away the color.",
     "funFact": "Beet betalains are pH-sensitive indicators — they turn yellow in acid and deep red in alkaline conditions. Studies show dietary nitrates from beets can improve athletic performance by 2-3% — used by professional athletes worldwide."
+  },
+  {
+    "id": "cambodian-fish-amok",
+    "name": "Cambodian Fish Amok",
+    "cuisine": "Cambodian 🇰🇭",
+    "cuisineFlag": "🇰🇭",
+    "emoji": "🥥",
+    "category": "stew",
+    "dietTags": [
+      "anti-inflammatory",
+      "balanced-omnivore"
+    ],
+    "difficulty": "Medium",
+    "time": "40 min",
+    "servings": 3,
+    "description": "Cambodia's national dish — fresh fish steamed in a rich kroeung (lemongrass curry paste) with coconut cream and kaffir lime leaves, traditionally served in a banana leaf cup. Fragrant, silky, and extraordinarily nutritious.",
+    "keyBenefits": [
+      "Complete protein",
+      "MCT fats from coconut cream",
+      "Lemongrass: antimicrobial and digestive",
+      "Turmeric in kroeung: anti-inflammatory"
+    ],
+    "ingredients": [
+      "500g firm white fish fillets (catfish or snapper), cubed",
+      "400ml coconut cream",
+      "2 tbsp fish sauce",
+      "1 egg",
+      "4 kaffir lime leaves, chiffonade",
+      "1 tbsp palm sugar",
+      "For kroeung paste: 3 lemongrass stalks, 4 kaffir lime leaves,",
+      "4 garlic cloves, 3 shallots, 2 inch galangal, 1 tsp turmeric,",
+      "2 dried red chilies, 1 tsp shrimp paste",
+      "Banana leaves or ramekins",
+      "Jasmine rice and fresh Thai basil to serve"
+    ],
+    "steps": [
+      "Make kroeung: blend all paste ingredients with a splash of coconut cream until very smooth.",
+      "Fry kroeung paste in a dry wok 3-4 min until fragrant and darkened.",
+      "Add coconut cream, fish sauce, and palm sugar. Stir until well combined.",
+      "Remove from heat. Beat in the egg. Add fish pieces and kaffir lime leaves, stir gently.",
+      "Pour into banana leaf cups or ramekins.",
+      "Steam on high heat 15-20 min until set (like a savory custard).",
+      "Garnish with fresh Thai basil and extra kaffir lime. Serve with jasmine rice."
+    ],
+    "macros": {
+      "calories": 450,
+      "protein": "36g",
+      "carbs": "22g",
+      "fat": "24g",
+      "fiber": "2g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Iodine (fish)",
+        "amount": "160mcg (107% RDA)",
+        "emoji": "🦋",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "3.5mcg (146% RDA)",
+        "emoji": "⚡",
+        "highlight": true
+      },
+      {
+        "name": "MCT (coconut cream)",
+        "amount": "Fast-metabolizing fats",
+        "emoji": "🥥",
+        "highlight": true
+      },
+      {
+        "name": "Selenium",
+        "amount": "48mcg (87% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Curcumin (turmeric in kroeung)",
+        "amount": "Anti-inflammatory",
+        "emoji": "🟡"
+      },
+      {
+        "name": "Lemongrass citral",
+        "amount": "Antimicrobial, digestive support",
+        "emoji": "🌿"
+      },
+      {
+        "name": "Omega-3 (DHA)",
+        "amount": "980mg",
+        "emoji": "🐟"
+      },
+      {
+        "name": "Potassium",
+        "amount": "870mg (25% RDA)",
+        "emoji": "🫀"
+      }
+    ],
+    "tip": "The secret to silky amok is the egg — it acts as a binder and creates the custard-like set. Don't rush the steaming; gentle heat gives a smooth result while high heat creates bubbles.",
+    "funFact": "Fish amok is one of the few Khmer dishes to use coconut cream as a base, reflecting Cambodian cuisine's ancient Indian influence. Galangal (similar to ginger) contains ACA — a compound studied for anti-cancer properties."
+  },
+  {
+    "id": "chinese-congee",
+    "name": "Ginger & Century Egg Congee",
+    "cuisine": "Chinese 🇨🇳",
+    "cuisineFlag": "🇨🇳",
+    "emoji": "🥣",
+    "category": "breakfast",
+    "dietTags": [
+      "balanced-omnivore",
+      "longevity",
+      "anti-inflammatory"
+    ],
+    "difficulty": "Easy",
+    "time": "60 min",
+    "servings": 4,
+    "description": "China's ancient healing porridge — rice slow-cooked in broth until silky and creamy, topped with century egg, fresh ginger, sesame oil, and crispy shallots. A restorative dish eaten across East and Southeast Asia for recovery and gut health.",
+    "keyBenefits": [
+      "Easily digestible — ideal for recovery",
+      "Fresh ginger: powerful anti-nausea & anti-inflammatory",
+      "Collagen from broth heals gut lining",
+      "High choline from century egg"
+    ],
+    "ingredients": [
+      "1 cup jasmine rice",
+      "1.5L chicken or bone broth",
+      "2 century eggs (pidan), peeled and quartered",
+      "2 inch fresh ginger, julienned",
+      "2 tbsp sesame oil",
+      "2 tbsp soy sauce",
+      "3 spring onions, sliced",
+      "2 tbsp crispy fried shallots",
+      "White pepper to taste",
+      "Fresh coriander to garnish"
+    ],
+    "steps": [
+      "Rinse rice. Bring broth to boil in large pot.",
+      "Add rice, reduce to lowest simmer, cover partially.",
+      "Cook 45-60 min, stirring occasionally, until rice breaks down into creamy porridge.",
+      "The consistency should be like thin oatmeal — add broth or water if too thick.",
+      "Season with soy sauce and white pepper.",
+      "Ladle into bowls. Top with century egg pieces, julienned ginger, spring onion.",
+      "Finish with sesame oil, crispy shallots, and fresh coriander."
+    ],
+    "macros": {
+      "calories": 290,
+      "protein": "14g",
+      "carbs": "42g",
+      "fat": "8g",
+      "fiber": "1g"
+    },
+    "keyMicronutrients": [
+      {
+        "name": "Choline (century egg)",
+        "amount": "280mg (51% RDA)",
+        "emoji": "🧠",
+        "highlight": true
+      },
+      {
+        "name": "Collagen (bone broth)",
+        "amount": "Gut-healing protein",
+        "emoji": "🦴",
+        "highlight": true
+      },
+      {
+        "name": "Gingerols & Shogaols",
+        "amount": "Anti-nausea, anti-inflammatory",
+        "emoji": "🟡",
+        "highlight": true
+      },
+      {
+        "name": "B12",
+        "amount": "1.4mcg (58% RDA)",
+        "emoji": "⚡"
+      },
+      {
+        "name": "Selenium",
+        "amount": "22mcg (40% RDA)",
+        "emoji": "🌰"
+      },
+      {
+        "name": "Zinc",
+        "amount": "2.1mg (19% RDA)",
+        "emoji": "🦪"
+      },
+      {
+        "name": "Iron",
+        "amount": "2.8mg (16% RDA)",
+        "emoji": "🔴"
+      },
+      {
+        "name": "Potassium (broth)",
+        "amount": "580mg (17% RDA)",
+        "emoji": "🫀"
+      }
+    ],
+    "tip": "The longer you cook the rice (up to 90 min), the more gelatinous and healing the congee becomes. The starch molecules fully dissolve, releasing resistant starch that feeds beneficial gut bacteria.",
+    "funFact": "Congee has been eaten in China for at least 2,500 years. Traditional Chinese medicine prescribes it as a restorative food for illness recovery — modern gastroenterology confirms its benefits for inflamed intestinal lining."
   }
 ]
